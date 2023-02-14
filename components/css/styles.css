@@ -1,0 +1,24 @@
+:root {
+    /* Paleta de Inicio */
+    --whiteColor:white;
+    --firstColor:#373F59;
+    --secondColor:#292C2E;   /*Color de footer*/
+    --thirdColor:#8698D9;
+
+    /* Paleta de Soluciones */
+    --fourthColor:#5F91CC;
+    --fifthColor:#24374D;
+    --sixthColor:#F7F8FA;
+
+    /*Paleta de Nosotros*/
+    --seventhColor:#CD5F5F;
+    --eighthColor:#8C4141;
+    --ninthColor:#F0F0F0; 
+
+    /* Paleta de login y registro */
+    --tenthColor:#8A8686;
+    --eleventhColor:#DDEAEB;
+    --twelfthColor:#5E7663;
+    --thirteenthColor:#547D71;
+    --fourteenthColor:#F7F8FA;
+}
