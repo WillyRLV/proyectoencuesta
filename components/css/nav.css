@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+:root {
+    /*fuente*/
+    --font-first: 'Lato', sans-serif;
+    /*============*/
+    --color-first: red;
+    --color-white: white;
+    --color-blue: #8698D9;
+    --color-button-373F59:#373F59;
+    /*tamaños*/
+    --first-height: 10vh;
+    /*gap*/
+    --gap-5px: 10px;
+    /*font-weight*/
+    --font-weight-700:700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*diseño global*/
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+body {
+    font-family: var(--font-first);
+}
+
+/*============*/
+/*estilo header*/
+
+.header {
+    position: relative;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    box-shadow: 1px 4px 9px -1px rgba(0,0,0,0.48);
+-webkit-box-shadow: 1px 4px 9px -1px rgba(0,0,0,0.48);
+-moz-box-shadow: 1px 4px 9px -1px rgba(0,0,0,0.48);
+
+}
+
+/*===========*/
+/*logo*/
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+/*======================*/
+
+/*estilo navbar*/
+
+
+/*=============*/
+
+/*estilo listas*/
+.lista-links li {
+    /* display: flex;
+color: var(--color-white);
+gap: var(--gap-5px); */
+    display: inline-block;
+    padding: 0 10px;
+    font-weight: var(--font-weight-700);
+    font-size: 1.2em;
+  
+}
+
+/*=============*/
+
+
+/*estilo listas a*/
+.lista-links li a {
+    /* display: flex;
+    color: var(--color-white);
+    gap: var(--gap-5px); */
+    display: inline-block;
+    padding: 0 20px;
+    text-decoration: none;
+    color: var(--color-white);
+
+}
+
+/*=============*/
+/*boton login*/
+.btn-log-in button {
+    background-color: var(--color-button-373F59);
+    color: var(--color-white);
+    font-weight: var(--font-weight-700);
+    padding: 9px 25px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.btn-log-in button:hover {
+    background-color: #585f83; 
+}
+
+/*=============*/
