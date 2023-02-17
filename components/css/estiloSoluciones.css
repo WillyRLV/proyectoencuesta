@@ -486,56 +486,134 @@
 
 
 /* responsivo */
-@media screen and (max-width:1150px) {
-    .descripcion-texto-slider{
-        width: 45%;
+@media screen and (min-height:1081px) { /*1920×1080*/
+    .texto-slider{
+        top: 50% !important;
+    }
+
+    .titulo-tarjeta p{
+        font-size: 35px;
+    }
+
+    .texto-tarjeta p{
+        font-size: 23px;
+    }
+
+    .titulo-tarjeta1 p{
+        font-size: 35px;
+    }
+
+    .texto-tarjeta1 p{
+        font-size: 23px;
     }
     
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-height:1080px) { /*1920×1080*/
+    .texto-slider{
+        top: 50% ;
+    }
+    
+}
 
-    body{
-        display: flex;
-        flex-direction: column;
+@media screen and (max-height:900px) { /*1440×900*/
+    .texto-slider{
+        top: 45% ;
+    }
+    
+}
+
+@media screen and (max-height:864px) { /*1536×864*/
+    .texto-slider{
+        top: 42%;
+    }
+    
+}
+
+@media screen and (max-width:1600px) { /*1600×900*/
+    
+    .descripcion-texto-slider{
+        width: 28%;
     }
 
-    .contenedor-tarjetas{
-        flex-direction: column;
+    .boton-texto-slider{
+        width: 17%;
+    }
+    
+}
+
+
+@media screen and (max-width:1440px) { /*1440×900*/
+    
+    .descripcion-texto-slider{
+        width: 32%;
     }
 
-    .tarjeta{
-        width: 100%;
-    }
-
-    .tarjeta1{
-        width: 100%;
-    }
-
-    .tarjeta2{
-        width: 100%;
-    }
-
-    .imagen-tarjeta{
-        margin-top: 50px;
+    .boton-texto-slider{
+        width: 18%;
     }
 
     .texto-tarjeta{
-        margin-bottom: 50px;
-    }
-
-    .imagen-tarjeta1{
-        margin-top: 50px;
+        width: 60%;
     }
 
     .texto-tarjeta1{
-        margin-bottom: 50px;
-    }
-
-    .contenedor-planes{
-        margin-top: 600px;
+        width: 60%;
     }
 }
+
+@media screen and (max-width:1366px) { /*1366×768*/
+    
+    .texto-tarjeta {
+       width: 60%;
+    }
+
+    .texto-tarjeta1 {
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width:1285px) { /*1280×720*/
+    
+    .descripcion-texto-slider{
+        width: 35%;
+    }
+
+    .boton-texto-slider{
+        width: 20%;
+    }
+
+    .texto-tarjeta p{
+        font-size: 18px;
+    }
+
+    .texto-tarjeta1 p{
+        font-size: 18px;
+    }
+
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) { /*Laptop*/
+    .descripcion-texto-slider{
+        width: 65%;
+    }
+
+    .boton-texto-slider{
+        width: 28%;
+    }
+
+    .texto-tarjeta {
+        width: 75%;
+    }
+
+    .texto-tarjeta1 {
+        width: 75%;
+    }
+}
+
+
 
 
 
