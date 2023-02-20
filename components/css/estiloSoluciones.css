@@ -358,6 +358,9 @@
     align-items: center;
     justify-content: center;
     margin-top: 7.5em;
+    /* background: red;
+    height: 90vh; */
+
 }
 
 .contenedor-cartas{
@@ -371,12 +374,15 @@
     margin: 20px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
     overflow: hidden;
+    transition: 0.3s ease-in-out;
 
 }
 
 .contenedor-cartas:hover{
-    height: 674px;
+    transform: scale(1.1);
 }
+
+
 
 .diseño-carta{
     
@@ -717,12 +723,12 @@
     }
 
     .titulo-texto-slider{
-        font-size: 2.3em;
+        font-size: 2.0em;
     }
 
     .descripcion-texto-slider{
         width: 100%;
-        font-size: 1.2em;
+        font-size: 1.0em;
         text-align: center;
     }
 
@@ -821,6 +827,10 @@
         width: 325px;
         margin: 10px;
     }
+
+    .contenedor-cartas:hover{
+        transform: none;
+    }
     
     .titulo-carta{
         left: 30px;
@@ -832,6 +842,10 @@
 
  }
 
+
+ /* .prueba-slider img{
+    margin: 1px;
+ } */
 
 
 
