@@ -4,16 +4,26 @@
     /*fuente*/
     --font-first: 'Lato', sans-serif;
     /*============*/
-    --color-first: red;
+    --color-first: #8698D9;
     --color-white: white;
-    --color-blue: #8698D9;
-    --color-button-373F59:#373F59;
+    --color-two: #292C2E;
+    --color-button-373F59: #373F59;
+
+    --transparend: transparent;
     /*tamaños*/
     --first-height: 10vh;
     /*gap*/
-    --gap-5px: 10px;
+    --gap-5px: 5px;
+    --gap-10px: 10px;
+    --gap-20px: 20px;
+    /*z-index*/
+    --zindex-1: 1;
+    --zindex-2: 2;
+    --zindex-0: 0;
+
+
     /*font-weight*/
-    --font-weight-700:700;
+    --font-weight-700: 700;
 }
 
 * {
@@ -33,21 +43,31 @@ body {
     font-family: var(--font-first);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*============*/
 /*estilo header*/
-
 .header {
-    position: relative;
-    background-color: var(--color-blue);
-    color: var(--color-white);
+    width: 100%;
+    position: fixed;
+    background-color: var(--transparend);
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 85px;
     padding: 5px 10%;
-    box-shadow: 1px 4px 9px -1px rgba(0,0,0,0.48);
--webkit-box-shadow: 1px 4px 9px -1px rgba(0,0,0,0.48);
--moz-box-shadow: 1px 4px 9px -1px rgba(0,0,0,0.48);
+    transition: .3s;
+
+}
+
+header.sticky {
+    background-color: var(--color-first);
+    box-shadow: 1px 4px 9px -1px rgba(0, 0, 0, 0.48);
+    -webkit-box-shadow: 1px 4px 9px -1px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 1px 4px 9px -1px rgba(0, 0, 0, 0.48);
+    height: 70px;
 
 }
 
@@ -56,40 +76,81 @@ body {
 .logo {
     cursor: pointer;
     margin-right: auto;
+    color: var(--color-two);
 }
+
 /*======================*/
 
 /*estilo navbar*/
-
+.nav {
+    display: flex;
+    transition: .3s ease;
+}
 
 /*=============*/
-
 /*estilo listas*/
-.lista-links li {
-    /* display: flex;
-color: var(--color-white);
-gap: var(--gap-5px); */
-    display: inline-block;
-    padding: 0 10px;
+.lista-links {
+    position: relative;
+    display: flex;
     font-weight: var(--font-weight-700);
     font-size: 1.2em;
-  
+    gap: var(--gap-20px);
+    padding: 0 30px;
+
+}
+
+/*estilo listas a*/
+.lista-links a {
+    position: relative;
+    text-decoration: none;
+    color: var(--color-two);
+
+}
+
+
+/*====================*/
+/*indicador de links*/
+
+.lista-links a::before {
+    position: absolute;
+    background-image: url(/components/img/vsg1.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    content: '';
+    width: 100%;
+    height: 15px;
+    border-radius: 350px;
+    /* text-align: center; */
+    /* color:var(--color-button-373F59); */
+    /* background-color:#373f59; */
+    left: 0;
+    bottom: -15px;
+    opacity: 0;
+
+    transition: opacity .3s;
+
+}
+
+.lista-links a.selected::before {
+    opacity: 1;
+}
+
+.lista-links a.selected {
+    color: var(--color-button-373F59);
+    font-weight: bolder;
+}
+/*diseños sticky*/
+header.sticky a.selected {
+    color: var(--color-white);
+}
+header.sticky .logo{
+    color: var(--color-white);
 }
 
 /*=============*/
 
-
-/*estilo listas a*/
-.lista-links li a {
-    /* display: flex;
-    color: var(--color-white);
-    gap: var(--gap-5px); */
-    display: inline-block;
-    padding: 0 20px;
-    text-decoration: none;
-    color: var(--color-white);
-
-}
+/*estilos*/
 
 /*=============*/
 /*boton login*/
@@ -106,7 +167,140 @@ gap: var(--gap-5px); */
 }
 
 .btn-log-in button:hover {
-    background-color: #585f83; 
+    background-color: #585f83;
 }
 
 /*=============*/
+
+
+
+.menu-btn {
+    display: none;
+}
+
+/*pueba de divs*/
+.section-div {
+    width: 100%;
+    height: 100vh;
+}
+
+.section-div:nth-child(1) {
+    background-color: rgb(255, 255, 255);
+}
+
+.section-div:nth-child(2) {
+    background-color: rgb(126, 170, 129);
+}
+
+.section-div:nth-child(3) {
+    background-color: rgb(91, 96, 136);
+}
+
+/*navbar mobile*/
+
+
+@media screen and (max-width:767px) {
+
+    /*mobil menu burger*/
+    /*menu hamburguesa*/
+    .menu-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        margin-left: 10px;
+        z-index: var(--zindex-2);
+    }
+
+    .menu-btn__burger {
+        width: 30px;
+        height: 4px;
+        background: var(--color-two);
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .3s ease-in-out;
+
+    }
+
+    .menu-btn__burger::before,
+    .menu-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background: var(--color-two);
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .3s ease-in-out;
+
+    }
+
+    .menu-btn__burger::before {
+        transform: translateY(-10px);
+    }
+
+    .menu-btn__burger::after {
+        transform: translateY(10px);
+    }
+
+    /*animation*/
+    .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background-color: transparent;
+        box-shadow: none;
+
+    }
+
+    .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+        background-color: var(--color-button-373F59);
+
+    }
+
+    .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+        background-color: var(--color-button-373F59);
+
+    }
+
+    /*=======================================================*/
+
+    .nav {
+        position: absolute;
+        background-color: var(--color-white);
+        top: 0px;
+        left: -700px;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        z-index: var(--zindex-2);
+
+    }
+
+    .lista-links {
+        flex-direction: column;
+        text-align: center;
+        height: 80vh;
+        justify-content: center;
+        font-size: 2em;
+        gap: 70px;
+
+    }
+
+    .lista-links li a {
+        color: var(--color-button-373F59);
+    }
+    header.sticky a.selected {
+        color: var(--color-button-373F59);
+    }
+
+    .active {
+        left: 0;
+    }
+
+}
