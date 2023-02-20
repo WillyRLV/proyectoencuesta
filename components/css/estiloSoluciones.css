@@ -6,7 +6,7 @@
 
 .contenedor-slider{
     width: 100%;
-    /* height: 100%; */
+     /* height: 100vh;  */
     min-height: 100vh;
 }
 
@@ -120,6 +120,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    filter: brightness(0.6);
 }
 
 .imagen-slider.active{
@@ -716,12 +717,12 @@
     }
 
     .titulo-texto-slider{
-        font-size: 2.7em;
+        font-size: 2.3em;
     }
 
     .descripcion-texto-slider{
         width: 100%;
-        font-size: 1.3em;
+        font-size: 1.2em;
         text-align: center;
     }
 
@@ -754,14 +755,17 @@
     
     .tarjeta{
         width: 100%;
+        height: 380px;
     }
 
     .tarjeta1{
         width: 100%;
+        height: 380px;
     }
 
     .tarjeta2{
         width: 100%;
+        height: 380px;
     }
 
     .imagen-tarjeta{
@@ -769,20 +773,61 @@
     }
     
     .imagen-tarjeta .bi-calendar4-week{
-        font-size: 60px;
+        font-size: 65px;
     }
 
     .imagen-tarjeta .bi-bar-chart-line{
-        font-size: 60px;
+        font-size: 65px;
     }
 
     .imagen-tarjeta .bi-cpu{
-        font-size: 60px;
+        font-size: 65px;
+    }
+
+    .titulo-tarjeta p{
+        font-size: 25px;
+    }
+
+    .titulo-tarjeta1 p{
+        font-size: 25px;
+    }
+
+    .texto-tarjeta p{
+        font-size: 15px;
+    }
+
+    .texto-tarjeta1 p{
+        font-size: 15px;
     }
 
 
     .contenedor-planes{
         margin-top: 10px;
+    }
+
+    .titulo-planes{
+        margin-bottom: 0;
+    }
+
+    .titulo-planes p{
+        font-size: 33px;
+    }
+
+    .cartas-planes{
+        margin-top: 3.0em;
+    }
+
+    .contenedor-cartas{
+        width: 325px;
+        margin: 10px;
+    }
+    
+    .titulo-carta{
+        left: 30px;
+    }
+
+    .boton-carta{
+        left: 80px;
     }
 
  }
