@@ -5,143 +5,76 @@
 }
 
 footer{
-    font-family: 'Lato', sans-serif;
     position: absolute;
-    bottom:0;
     left: 0;
     right: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 50px 0;
     background-color: var(--secondColor);
-    height: auto;
-    padding-top: 40px;
-    width: 100vw;
 }
 
-.footer-content{
+.contenedor-footer{
     display: flex;
-    align-items: center;
-    text-align: center;
     flex-wrap: wrap;
-    width: 100vw;
-    justify-content: center;
+    justify-content: space-evenly;
+    /* max-width: 1200px; */
+    margin: auto;
+    margin-top: 20px;
 }
 
-
-/*estilo de contacto*/
-.footer-contacto{
+.box-footer{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    /* width: 35vw; */
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    padding: 40px
 }
 
-
-
-.footer-contacto-sub p{
-    font-size: 30px;
-    color: white;
-    display: flex;
-    align-items: start;
-    justify-content: start;
+.box-footer .logo img{
+    width: 40px;
+    height: 30px;
 }
 
-.footer-contacto ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
+.box-footer .terms{
+    max-width: 400px;
+    margin-top: 30px;
+    font-weight: 500;
+    color: var(--seventeenthColor);
+    font-size: 18px;
 }
 
-.footer-contacto li{
-    display: flex;
-    color: #AEADAD;
-    margin: 5px;
+.box-footer .contacto{
+    max-width: 400px;
+    margin-top: 8px;
+    font-weight: 500;
+    color: var(--seventeenthColor);
+    font-size: 18px;
 }
 
-.footer-contacto li i{
-    margin: 0px 10px 0px 0px;
-}
-
-/* estilo de los iconos sociales */
-.footer-icons{
-    /* width: 25vw; */
-    /* padding: 20px; */
-    text-align: center;
-    margin-bottom: 1.5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.iconos{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0 1.5rem 0;
-}
-
-.iconos-footer{
-    font-size: 25px;
-}
-
-.iconos li{
-    margin: 0 15px;
-}
-
-li a{
-    display: flex;
-    text-decoration: none;
-    color: #AEADAD;
-    border: 2px solid #AEADAD;
-    padding: 3px 5px;
-    border-radius: 20%;
-    align-items: center;
-    /* width: 35px; */
-    justify-content: center;
-    align-content: center;
-}
-
-/* estilo del texto del footer */
-.footer-texto{
-    background-color: var(--secondColor);
-    width: 40vw;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-.footer-texto p{
-    color: #AEADAD;
-    font-family: 'Lato', sans-serif;
-    font-size: 15px;
+.box-footer h2{
+    margin-bottom: 30px;
+    color: var(--seventeenthColor);
     font-weight: 700;
-    text-align: center;
 }
 
-
-/* responsive */
-@media screen and (max-width:880px) {
-    .footer-texto p{
-        font-size: 12px;
-    }
+.box-footer a{
+    margin-top: 10px;
+    color: var(--seventeenthColor);
+    font-weight: 680;
+    text-decoration: none;
 }
 
-@media screen and (max-width:500px) {
-    .footer-texto {
-        width: 100vw;
+.box-footer a:hover{
+    opacity: 0.8;
+}
+
+.box-footer a .bi{
+    font-size: 20px;
+}
+
+/* responsivo */
+@media screen and (min-width: 320px) and (max-width: 480px) { /*celulares*/
+    .box-footer{
+        align-items: center;
     }
 }
 
