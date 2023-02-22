@@ -20,8 +20,6 @@
     --zindex-1: 1;
     --zindex-2: 2;
     --zindex-0: 0;
-
-
     /*font-weight*/
     --font-weight-700: 700;
 }
@@ -59,6 +57,7 @@ html {
     height: 85px;
     padding: 5px 10%;
     transition: .3s;
+    z-index: 2;
 
 }
 
@@ -78,7 +77,6 @@ header.sticky {
     margin-right: auto;
     color: var(--color-two);
 }
-
 /*======================*/
 
 /*estilo navbar*/
@@ -86,7 +84,6 @@ header.sticky {
     display: flex;
     transition: .3s ease;
 }
-
 /*=============*/
 /*estilo listas*/
 .lista-links {
@@ -98,22 +95,18 @@ header.sticky {
     padding: 0 30px;
 
 }
-
 /*estilo listas a*/
 .lista-links a {
     position: relative;
     text-decoration: none;
     color: var(--color-two);
-
 }
-
-
 /*====================*/
 /*indicador de links*/
 
 .lista-links a::before {
     position: absolute;
-    background-image: url(/components/img/vsg1.svg);
+    background-image: url(/components/img/header/vsg1.svg);
     background-repeat: no-repeat;
     background-size: 15px;
     background-position: center;
@@ -172,32 +165,13 @@ header.sticky .logo{
 
 /*=============*/
 
-
-
 .menu-btn {
     display: none;
 }
 
-/*pueba de divs*/
-.section-div {
-    width: 100%;
-    height: 100vh;
-}
 
-.section-div:nth-child(1) {
-    background-color: rgb(255, 255, 255);
-}
-
-.section-div:nth-child(2) {
-    background-color: rgb(126, 170, 129);
-}
-
-.section-div:nth-child(3) {
-    background-color: rgb(91, 96, 136);
-}
 
 /*navbar mobile*/
-
 
 @media screen and (max-width:767px) {
 
