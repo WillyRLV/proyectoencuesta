@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 
+/* diseño de la primera parte de la página que contiene el carrouse */
+/*contenedor general de la seccion*/
 .contenedor-slider {
     width: 100%;
     /* height: 100vh;  */
     min-height: 100vh;
 }
 
+/* contenedor del titulo-descripcion y boton que tendra cada imagen del carrousel o slider */
 .texto-slider {
     position: absolute;
     display: flex;
@@ -24,6 +27,7 @@
     display: flex;
 }
 
+/*contenedor que contiene el titulo de cada imagen*/
 .titulo-texto-slider {
     color: rgb(255, 255, 255);
     font-size: 4.5em;
@@ -31,7 +35,7 @@
     font-family: 'Rajdhani', sans-serif;
 }
 
-
+/*contenedor que contiene el texto descriptivo de cada imagen */
 .descripcion-texto-slider {
     width: 26%;
     color: var(--whiteColor);
@@ -42,6 +46,7 @@
     font-family: 'Lato', sans-serif;
 }
 
+/*contenedor que contiene el boton de cada imagen*/
 .boton-texto-slider {
     margin-top: 20px;
     width: 15%;
@@ -53,6 +58,7 @@
     font-weight: 700;
 }
 
+/*diesño del enlace que esta dentro del boton de cada imagen */
 .boton-texto-slider a {
     text-decoration: none;
     color: #545151;
@@ -60,11 +66,13 @@
     font-family: 'Lato' sans-serif;
 }
 
+/* diseño del contenedor general de todas las imagenes del carrousel o slider */
 .slider {
     height: 100vh;
 
 }
 
+/*diseño de las imagenes que se encuentren dentro del contenedor slider*/
 .slider img {
     width: 100%;
     height: 100vh;
@@ -108,6 +116,7 @@
     transform: scale(1.2);
 } */
 
+/* diseño del contenedor general que contiene la imagen y el texto de cada parte del carrousel o slider */
 .imagen-slider {
     /* position: absolute;
     width: 100%;*/
@@ -116,6 +125,7 @@
     height: 100vh;
 }
 
+/* diseño de la imagen que se encuentra dentro del contenedor imagen-slider */
 .imagen-slider img {
     background-size: cover;
     background-position: center;
@@ -129,6 +139,7 @@
     transition-property: clip-path;
 }
 
+/*diseño del funcionamiento del slider*/
 .slick-dots {
     position: absolute;
     bottom: 25px;
@@ -167,9 +178,12 @@
     color: var(--fifthColor);
     opacity: .75;
 }
-
+/* ========================================================= */
+/* =================================================================== */
 
 /* segunda parte de Soluciones */
+
+/* diseño del contenedor general de la segunda seccion de la ventana soluciones */
 .segundo-contenedor {
     display: flex;
     text-align: center;
@@ -183,6 +197,7 @@
     margin-bottom: 30px;
 }
 
+/* diseño del contedor del titulo de la segunda seccion */
 .texto-contenedor-s {
     font-size: 50px;
     font-family: 'Rajdhani', sans-serif;
@@ -190,6 +205,7 @@
     color: #666666;
 }
 
+/* diseño del contedor del boton de la segunda seccion */
 .boton-contenedor-s {
     background-color: var(--fifthColor);
     margin-top: 45px;
@@ -197,6 +213,7 @@
     border-radius: 42px;
 }
 
+/* diseño del enlace que se encuentra dentro del contendor boton */
 .boton-contenedor-s a {
     text-decoration: none;
     color: var(--whiteColor);
@@ -204,6 +221,8 @@
 }
 
 /* tercera parte de soluciones */
+
+/* contendor general de la seccion donde se encuentran las tarjetas */
 .contenedor-tarjetas {
     width: 100%;
     display: flex;
@@ -212,6 +231,7 @@
     margin-bottom: 20px;
 }
 
+/* diseño del contendor de la primera tarjeta */
 .tarjeta {
     background-color: #D9D9D9;
     width: 33.3%;
@@ -223,6 +243,7 @@
 
 }
 
+/* diseño del contendor de la segunda tarjeta */
 .tarjeta1 {
     background-color: white;
     width: 33.3%;
@@ -233,6 +254,7 @@
     align-items: center;
 }
 
+/* diseño del contendor de la tercera tarjeta */
 .tarjeta2 {
     background-color: var(--fifthColor);
     width: 33.4%;
@@ -243,6 +265,7 @@
     align-items: center;
 }
 
+/* diseño del contenedor de los iconos de cada tarjeta */
 .imagen-tarjeta {
     display: flex;
     align-items: center;
@@ -252,11 +275,13 @@
     margin-top: 100px;
 }
 
+/* diseño del icono que se encuentra en el contenedor imagen-tarjeta */
 .imagen-tarjeta i {
     font-size: 100px;
     font-weight: lighter;
 }
 
+/* diseños del icono de cada tarjeta */
 .bi-calendar4-week {
     color: var(--fourthColor);
 }
@@ -268,7 +293,9 @@
 .bi-bar-chart-line {
     color: var(--whiteColor);
 }
+/* =================================== */
 
+/* diseño del contenedor del titulo de la tarjeta */
 .titulo-tarjeta {
     display: flex;
     align-items: center;
@@ -276,6 +303,7 @@
     margin-bottom: 15px;
 }
 
+/* diseño del titulo en el contenedor titulo */
 .titulo-tarjeta p {
     font-size: 30px;
     font-family: 'Rajdhani', sans-serif;
@@ -283,6 +311,7 @@
     color: var(--fifteenthColor);
 }
 
+/* diseño del contenedor del titulo de la tarjeta */
 .titulo-tarjeta1 {
     display: flex;
     align-items: center;
@@ -290,6 +319,7 @@
     margin-bottom: 15px;
 }
 
+/* diseño del titulo de la segunda tarjeta del contenedor titulo */
 .titulo-tarjeta1 p {
     font-size: 30px;
     font-family: 'Rajdhani', sans-serif;
@@ -297,6 +327,7 @@
     color: var(--whiteColor);
 }
 
+/* diseño del contenedor del texto de la primera tarjeta */
 .texto-tarjeta {
     display: flex;
     align-items: center;
@@ -305,6 +336,7 @@
     width: 50%;
 }
 
+/* diseño del texto de la primera tarjeta del contenedor texto-tarjeta */
 .texto-tarjeta p {
     color: var(--fifteenthColor);
     font-family: 'Lato', sans-serif;
@@ -313,7 +345,7 @@
     text-align: center;
 }
 
-
+/* diseño del contenedor del texto de la segunda tarjeta */
 .texto-tarjeta1 {
     display: flex;
     align-items: center;
@@ -322,6 +354,7 @@
     width: 50%;
 }
 
+/* diseño del texto de la segunda tarjeta del contenedor texto-tarjeta */
 .texto-tarjeta1 p {
     color: var(--whiteColor);
     font-family: 'Lato', sans-serif;
@@ -330,7 +363,11 @@
     text-align: center;
 }
 
+/* =================================================================== */
+
 /*Planes*/
+
+/* contenedor general de la sección planes */
 .contenedor-planes {
     display: flex;
     width: 100%;
@@ -341,12 +378,14 @@
     margin-bottom: 80px;
 }
 
+/* contendor del titulo de la sección planes */
 .titulo-planes {
     display: flex;
     margin-top: 50px;
     margin-bottom: 60px;
 }
 
+/* diseño del texto que se encuentra en el contedor titulo-planes */
 .titulo-planes p {
     font-size: 60px;
     font-family: 'Duru Sans', sans-serif;
@@ -355,6 +394,7 @@
     color: #666666;
 }
 
+/* contenedor general de todas las cartas que se encuentren en la sección planes */
 .cartas-planes {
     display: flex;
     flex-wrap: wrap;
@@ -367,6 +407,7 @@
 
 }
 
+/* contendor general del contenido de las cartas */
 .contenedor-cartas {
     display: flex;
     flex-direction: column;
@@ -391,7 +432,7 @@
 }
 
 
-
+/* diseño del circulo que se encuentra en la carta */
 .diseño-carta {
 
     position: absolute;
@@ -404,6 +445,7 @@
   
 }
 
+/* diseño del contendor de imagenes de la carta */
 .imagen-carta {
     position: relative;
     /* left: 89px;
@@ -411,6 +453,7 @@
     /* z-index: -3; */
 }
 
+/* tamaño de la imagen que se encuentre dentro del contendor imagen-carta */
 .imagen-carta img {
     width: 173px;
     height: 190px;
@@ -418,12 +461,14 @@
    
 }
 
+/* diseño del contenedor del titulo de las cartas */
 .titulo-carta {
     /* position: absolute; */
     width: 278px;
     height: 44px;
 }
 
+/* estilo del texto del contenedor de titulo-carta */
 .titulo-carta p {
     font-size: 30px;
     font-weight: bolder;
@@ -432,6 +477,7 @@
     line-height: 36px;
 }
 
+/* estilo del contendor del texto de la carta */
 .texto-carta {
     /* position: absolute; */
     width: 196px;
@@ -450,6 +496,7 @@
     line-height: 29px;
 }
 
+/* estilo del contenedor del boton de la carta */
 .boton-carta {
     display: flex;
     width: 180px;
@@ -485,11 +532,13 @@
 
 .boton-carta:hover a {
     color: var(--whiteColor);
-
 }
 
+/* =============================================================================================== */
+/* =============================================================================================== */
 
-/* responsivo */
+
+/* Responsivo de Soluciones */
 @media screen and (min-height:1081px) {
 
     /*1920×1080*/
@@ -540,6 +589,12 @@
         top: 42%;
     }
 
+}
+
+@media screen and (max-height:750px) {
+    .texto-slider{
+        top:30%;
+    }
 }
 
 @media screen and (max-width:1600px) {
@@ -854,6 +909,3 @@
 }
 
 
-/* .prueba-slider img{
-    margin: 1px;
- } */
