@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* diseño de la etiqueta footer */
 footer{
     position: absolute;
     left: 0;
@@ -14,6 +15,7 @@ footer{
     background-color: var(--secondColor);
 }
 
+/* diseño del contenedor general del footer */
 .contenedor-footer{
     display: flex;
     flex-wrap: wrap;
@@ -23,17 +25,20 @@ footer{
     margin-top: 20px;
 }
 
+/*diseño del contenedor de las partes del footer*/
 .box-footer{
     display: flex;
     flex-direction: column;
     padding: 40px
 }
 
+/*tamaño de la imagen que se encuentra en el contenedor logo*/
 .box-footer .logo img{
     width: 40px;
     height: 30px;
 }
 
+/*diseño del texto que se encuentra en el contenedor terms */
 .box-footer .terms{
     max-width: 400px;
     margin-top: 30px;
@@ -42,6 +47,7 @@ footer{
     font-size: 18px;
 }
 
+/*diseño del texto que tienen la clase contacto*/
 .box-footer .contacto{
     max-width: 400px;
     margin-top: 8px;
@@ -50,12 +56,14 @@ footer{
     font-size: 18px;
 }
 
+/*diseño de etiqueta h2 que se encuentre dentro del contenedor box-footer*/
 .box-footer h2{
     margin-bottom: 30px;
     color: var(--seventeenthColor);
     font-weight: 700;
 }
 
+/*diseño de la etiqueta a que se encuentren dentro del contenedor box-footer*/
 .box-footer a{
     margin-top: 10px;
     color: var(--seventeenthColor);
@@ -67,6 +75,7 @@ footer{
     opacity: 0.8;
 }
 
+/*diseño de los iconos con la clase bi*/
 .box-footer a .bi{
     font-size: 20px;
 }
