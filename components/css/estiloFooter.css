@@ -1,3 +1,11 @@
+:root {
+        /* Paleta de Footer */
+        --whiteColor:white;
+        --firstColor:#373F59;
+        --secondColor:#292C2E;   /*Color de footer*/
+        --thirdColor:#8698D9;
+        --seventeenthColor:#AEADAD; /*Color de letras footer*/
+}
 *{
     margin: 0;
     padding: 0;
