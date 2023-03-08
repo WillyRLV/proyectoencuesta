@@ -1,16 +1,24 @@
 /*Inicio*/
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+body{
+  font-family: "Lato", sans-serif;
+}
 /* contenedor principal ======================================= */
+#section-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
 .contenedor_principal {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   padding: 1rem 0 3rem 0;
   display: flex;
@@ -19,10 +27,15 @@
 }
 
 .inicio {
-  background-image: url(../img/img_inicio/back_pen.jpg);
+  --opacidad-negro: 0.09;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/img_inicio/back_pen.jpg");
   background-position: center;
-  background-size: cover;
+  
+  background-size: cover ;
   background-repeat: no-repeat;
+
+
+  
  
 
 }
@@ -33,39 +46,39 @@
 .Texto_arriba {
   display: flex;
   flex-direction: column;
-  padding-left: 65px; 
+  /* padding-left: 65px;  */
+  margin-left: 90px;
   font-size: 15px;
-  width: 419px;
-  text-align: left;
+  width: 490px;
   gap: 15px;
+  transition: .5s;
 }
 
 .titulo_arriba {
   color: #8698d9;
-  font-size: 3em;
-  font-family: "Rajdhani", sans-serif;
+  font-size: 2.8em;
   text-align: left;
+
   
 }
 
 .descripcion_arriba {
-  color: #292c2e;
-  font-family: "Lato", sans-serif;
+  color: #525353;
   font-size: 1.8rem;
+
 }
 
 .button {
-  display: flex;
+  text-decoration: none;
   width: 140px;
-  font-family: "Lato", sans-serif;
+  border: none;
   font-weight: 700;
   border-radius: 20px;
   color: #ffffff;
   font-size: 20px;
   height: 32px;
-  align-items: center;
-  justify-content: center;
   margin-top: 15px;
+  cursor: pointer;
   background-image: linear-gradient(
     90deg,
     hsl(227deg 52% 69%) 0%,
@@ -79,11 +92,16 @@
     hsl(175deg 34% 63%) 89%,
     hsl(166deg 31% 66%) 100%
 ); 
+
 }
+
 
 html{
   scroll-behavior: smooth;
 }
+
+
+    /* boton scroll down */
 
 .container-scroll{
   position: relative;
@@ -93,7 +111,7 @@ html{
   width: 100px;
   height: 100px;
   position: absolute;
-  margin-left: 46%;
+margin: auto;
   bottom: 0px;
   cursor: pointer;
   gap: 20px;
@@ -103,26 +121,25 @@ html{
 }
 
 
-
-
-
 #scroll-btn::before{
   content: "";
+  border-radius: 30px;
   position: absolute;
   transform: rotate(200deg);
   width: 50px;
-  height: 10px;
+  height: 8px;
   left: 5px;
   background-color:#909090;
 }
 
 .scroll-btn::after{
   content: "";
+  border-radius: 30px;
   z-index: 100;
   position: absolute;
   transform: rotate(-200deg);
   width: 50px;
-  height: 10px;
+  height: 8px;
   right: 5px;
   background:#909090;
 }
@@ -283,7 +300,6 @@ html{
 
 
 .tu_mejor_opcion{
-    font-family: "Rajdhani", sans-serif;
     color: #8698d9;
     text-align: center;
     margin-top: -20px;
@@ -299,8 +315,11 @@ html{
 .contenedor-iconos{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
-    margin-top: 60px; 
-    margin: 20px;
+    width: 60%;
+    margin: auto;
+  
+   
+  
 }
 .contenedor-iconos h1{
     font-family: "Rajdhani", sans-serif;
@@ -349,21 +368,30 @@ html{
 /* mobile  */
   @media screen and  (max-width: 675px) {
     
-    .inicio{
-      background-size: cover;
-      width: 100%;
-      height: 500px;
-    }
+
     
     .Texto_arriba{
-      margin-top: 40px;
-      width: 300px;
+      /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
     }
 
     .titulo_arriba{
-      font-size: 1.8em;
+      text-align: center;
+      font-size: 1.6em;
+      inline-size: 240px;
+      
     }
-    
+    .descripcion_arriba{
+      text-align: center;
+      font-size: 1.4em;
+      inline-size: 300px;
+      font-weight: 400;
+
+
+    }
     a#scroll-btn{
       bottom: 4.8em;
     }
@@ -390,7 +418,7 @@ html{
     .cuadro-6 h1::after{
       left: 20px;
     }
-    .cuadro-2{
+    .cuadro-3{
       grid-row-start: 4;
     }
 
