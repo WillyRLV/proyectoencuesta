@@ -51,13 +51,13 @@ ScrollReveal().reveal('.boton-contenedor-s', {
 
 
 //Cartas 
-// ScrollReveal().reveal('.contenedor-cartas', {
-//     delay: 500,
-//     duration: 1200,
-//   distance:"60px",
-//   reset:true,
-//   origin: "bottom"
-//   });  
+ScrollReveal().reveal('.contenedor-planes', {
+    delay: 500,
+    duration: 1200,
+  distance:"60px",
+  reset:true,
+  origin: "bottom"
+  });  
 
 //círculo de las cartas
   ScrollReveal().reveal('.diseño-carta', {

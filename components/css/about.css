@@ -295,6 +295,28 @@ position: relative;
 
 }
 
+
+/* Inicio de prueba */
+
+.div1 .desing-global::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(#000,#CD5F5F);
+    
+}
+
+
+
+
+
+
+/* Fin de prueba */
+
+
+
+
 .desing-global img {
     /* width: 200%; */
     object-fit: cover;
@@ -312,6 +334,8 @@ position: relative;
     color: var(--white-color);
     font-size: 2em;
     font-weight: bold;
+
+    z-index: 4; /*parte de prueba*/
 }
 
 
