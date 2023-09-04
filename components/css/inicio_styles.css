@@ -39,11 +39,11 @@ body {
 
 }
 
-/*Flecha deslizar hacia abajo*/
+/*Flecha deslizar hacia abajo - Sebas*/
 .demo a {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
+  bottom: 10px; /*Mejorando posición de la flecha - Sebas*/
+  left: 12%;
   z-index: 2;
   display: inline-block;
   -webkit-transform: translate(0, -50%);
