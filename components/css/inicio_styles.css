@@ -431,6 +431,8 @@ html {
 
   .title-only::after {
     width: 100% !important;
+    /*Quitando linea*/
+    display: none;
   }
 
   a#scroll-btn {
