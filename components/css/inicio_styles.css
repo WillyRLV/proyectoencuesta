@@ -429,9 +429,9 @@ html {
     margin: auto;
   }
 
+  /*Quitando linea para modo celular - Sebas*/
   .title-only::after {
     width: 100% !important;
-    /*Quitando linea*/
     display: none;
   }
 
@@ -487,4 +487,8 @@ html {
     font-size: 1.33em;
   }
 
+  /*Colocando margen a los costados - Sebas*/
+  .tu_mejor_opcion{
+    margin: -20px 12px 73px 12px;
+  }
 }
