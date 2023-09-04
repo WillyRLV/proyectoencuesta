@@ -39,10 +39,10 @@ body {
 
 }
 
-/*Flecha deslizar hacia abajo - Sebas*/
+/*Flecha deslizar hacia abajo*/
 .demo a {
   position: absolute;
-  bottom: 10px; /*Mejorando posición de la flecha - Sebas*/
+  bottom: 10px; /*Posición de la flecha*/
   left: 12%;
   z-index: 1;
   display: inline-block;
@@ -410,7 +410,7 @@ html {
     inline-size: 240px;
   }*/
 
-  /*Nuevo estilo para titulo - Sebas*/
+  /*Nuevo estilo para titulo*/
   .titulo_arriba {
     text-align: center;
     font-size: 1.9em;
@@ -425,7 +425,7 @@ html {
     font-weight: 400;
   }*/
 
-  /*Nuevo estilo para descripcion del título - Sebas*/
+  /*Nuevo estilo para descripcion del título*/
   .descripcion_arriba {
     text-align: center;
     font-size: 1.4em;
@@ -447,7 +447,7 @@ html {
     margin: auto;
   }
 
-  /*Quitando linea para modo celular - Sebas*/
+  /*Quitando linea para modo celular*/
   .title-only::after {
     width: 100% !important;
     display: none;
@@ -505,7 +505,7 @@ html {
     font-size: 1.33em;
   }
 
-  /*Colocando margen a los costados - Sebas*/
+  /*Colocando margen a los costados */
   .tu_mejor_opcion{
     margin: -20px 12px 73px 12px;
   }
