@@ -44,7 +44,7 @@ body {
   position: absolute;
   bottom: 10px; /*Mejorando posición de la flecha - Sebas*/
   left: 12%;
-  z-index: 2;
+  z-index: 1;
   display: inline-block;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
