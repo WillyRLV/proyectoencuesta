@@ -409,7 +409,7 @@ html {
     font-size: 1.6em;
     inline-size: 240px;
   }*/
-  
+
   /*Nuevo estilo para titulo - Sebas*/
   .titulo_arriba {
     text-align: center;
@@ -417,12 +417,23 @@ html {
     margin: 0 10px;
     /* inline-size: 240px;*/
   }
-
+/*
   .descripcion_arriba {
     text-align: center;
     font-size: 1.4em;
     inline-size: 300px;
     font-weight: 400;
+  }*/
+
+  /*Nuevo estilo para descripcion del título - Sebas*/
+  .descripcion_arriba {
+    text-align: center;
+    font-size: 1.4em;
+    /* inline-size: 240px; */
+    font-weight: 500;
+    margin-top: 5px;
+    margin: 5px 8px 0 8px;
+    line-height: 20pt;
   }
 
   .title_box_cuadro2,
