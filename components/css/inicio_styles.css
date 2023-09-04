@@ -404,11 +404,18 @@ html {
     text-align: center;
   }
 
-  .titulo_arriba {
+  /*.titulo_arriba {
     text-align: center;
     font-size: 1.6em;
     inline-size: 240px;
-
+  }*/
+  
+  /*Nuevo estilo para titulo - Sebas*/
+  .titulo_arriba {
+    text-align: center;
+    font-size: 1.9em;
+    margin: 0 10px;
+    /* inline-size: 240px;*/
   }
 
   .descripcion_arriba {
