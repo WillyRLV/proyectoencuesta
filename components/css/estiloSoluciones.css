@@ -6,6 +6,8 @@
      --fifteenthColor:#707070; /*Letra de las tarjetas*/
      --sixhteenthColor:#3F3D56;/*Color de letra de boton*/
      --whiteColor:#FFFF;
+     --subtitleColor: #666666; /*Color de los Subtitulos, botón principal*/ 
+     --eighteenthColor:#D9D9D9; /*Color de la tercera sección*/
 }
 
 * {
@@ -39,7 +41,7 @@
 
 /*contenedor que contiene el titulo de cada imagen*/
 .titulo-texto-slider {
-    color: rgb(255, 255, 255);
+    color: var(--whiteColor);
     font-size: 4.5em;
     font-weight: 900;
     font-family: 'Rajdhani', sans-serif;
@@ -61,7 +63,7 @@
     margin-top: 20px;
     width: 15%;
     padding: 20px;
-    background-color: #F7F8FA;
+    background-color: var(--sixthColor);
     text-align: center;
     border-radius: 42px;
     font-family: 'Lato', sans-serif;
@@ -71,7 +73,7 @@
 /*diesño del enlace que esta dentro del boton de cada imagen */
 .boton-texto-slider a {
     text-decoration: none;
-    color: #545151;
+    color: var(--subtitleColor);
     font-size: 22px;
     font-family: 'Lato' sans-serif;
 }
@@ -212,7 +214,7 @@
     font-size: 50px;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 1000;
-    color: #666666;
+    color: var(--subtitleColor);
 }
 
 /* diseño del contedor del boton de la segunda seccion */
@@ -243,7 +245,7 @@
 
 /* diseño del contendor de la primera tarjeta */
 .tarjeta {
-    background-color: #D9D9D9;
+    background-color: var(--eighteenthColor);
     width: 33.3%;
     height: 500px;
     display: flex;
@@ -255,7 +257,7 @@
 
 /* diseño del contendor de la segunda tarjeta */
 .tarjeta1 {
-    background-color: white;
+    background-color: var(--whiteColor);
     width: 33.3%;
     height: 500px;
     display: flex;
@@ -401,7 +403,7 @@
     font-family: 'Duru Sans', sans-serif;
     font-weight: 1000;
     text-align: center;
-    color: #666666;
+    color: var(--subtitleColor);
 }
 
 /* contenedor general de todas las cartas que se encuentren en la sección planes */
