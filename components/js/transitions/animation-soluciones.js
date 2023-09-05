@@ -67,3 +67,28 @@ ScrollReveal().reveal('.contenedor-planes', {
   reset:true,
   origin: "top"
   });
+
+//Texto Ofrecimiento
+ScrollReveal().reveal('.texto-tarjeta', {
+    delay: 500,
+    duration: 1200,
+  distance:"60px",
+  reset:true,
+  origin: "bottom"
+  });
+  
+  ScrollReveal().reveal('.texto-tarjeta2', {
+    delay: 700,
+    duration: 1200,
+  distance:"60px",
+  reset:true,
+  origin: "bottom"
+  });
+
+  ScrollReveal().reveal('.texto-tarjeta3', {
+    delay: 900,
+    duration: 1200,
+  distance:"60px",
+  reset:true,
+  origin: "bottom"
+  });
