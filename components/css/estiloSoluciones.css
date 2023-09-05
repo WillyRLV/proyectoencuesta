@@ -6,6 +6,7 @@
      --fifteenthColor:#707070; /*Letra de las tarjetas*/
      --sixhteenthColor:#3F3D56;/*Color de letra de boton*/
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -170,7 +171,7 @@
 
 .slick-dots li button {
     position: relative;
-    background-color: var(--fifthColor);
+    background-color: var(--sixthColor);
     border: none;
     opacity: .25;
     width: 15px;
