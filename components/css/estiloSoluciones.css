@@ -522,6 +522,7 @@
     background-origin: border-box;
     background-clip: content-box, border-box;
 
+    transition: background-image 0.9s ease-in-out; /*Suavizar botón*/
 }
 
 .boton-carta a {
