@@ -15,8 +15,8 @@ ScrollReveal().reveal('.boton-contenedor-s', {
   });
 
   ScrollReveal().reveal('.tarjeta', {
-    delay: 600,
-    duration: 1400,
+    delay: 500,
+    duration: 1300,
   distance:"0px",
   reset:true,
   origin: "top",
@@ -24,16 +24,16 @@ ScrollReveal().reveal('.boton-contenedor-s', {
   });
 
   ScrollReveal().reveal('.tarjeta1', {
-    delay: 800,
-    duration: 1700,
+    delay: 700,
+    duration: 1600,
   distance:"0px",
   reset:true,
   origin: "top",
   });
 
   ScrollReveal().reveal('.tarjeta2', {
-    delay: 1000,
-    duration: 2000,
+    delay: 900,
+    duration: 1900,
   distance:"0px",
   reset:true,
   origin: "top"
