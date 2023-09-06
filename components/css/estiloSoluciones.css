@@ -511,8 +511,6 @@
     font-weight: bold;
 }
 
-
-
 .boton-carta:hover {
     background-image: linear-gradient(90deg, #5F91CC 0%, #8DC4B6 100%),
         linear-gradient(90deg, #5F91CC 0%, #8DC4B6 100%);
@@ -543,15 +541,6 @@
     .texto-tarjeta p {
         font-size: 23px;
     }
-
-    .titulo-tarjeta1 p {
-        font-size: 35px;
-    }
-
-    .texto-tarjeta1 p {
-        font-size: 23px;
-    }
-
 }
 
 @media screen and (max-height:1080px) {
@@ -615,20 +604,12 @@
     .texto-tarjeta {
         width: 60%;
     }
-
-    .texto-tarjeta1 {
-        width: 60%;
-    }
 }
 
 @media screen and (max-width:1366px) {
     /*1366×768*/
 
     .texto-tarjeta {
-        width: 60%;
-    }
-
-    .texto-tarjeta1 {
         width: 60%;
     }
 
@@ -649,11 +630,6 @@
         font-size: 18px;
     }
 
-    .texto-tarjeta1 p {
-        font-size: 18px;
-    }
-
-
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -672,10 +648,6 @@
     }
 
     .texto-tarjeta {
-        width: 75%;
-    }
-
-    .texto-tarjeta1 {
         width: 75%;
     }
 }
@@ -721,14 +693,6 @@
         width: 100%;
     }
 
-    .tarjeta1 {
-        width: 100%;
-    }
-
-    .tarjeta2 {
-        width: 100%;
-    }
-
     .imagen-tarjeta {
         margin-top: 50px;
     }
@@ -737,15 +701,7 @@
         margin-bottom: 50px;
     }
 
-    .texto-tarjeta1 {
-        margin-bottom: 50px;
-    }
-
     .texto-tarjeta p {
-        text-align: center;
-    }
-
-    .texto-tarjeta1 p {
         text-align: center;
     }
 
@@ -822,16 +778,6 @@
         height: 380px;
     }
 
-    .tarjeta1 {
-        width: 100%;
-        height: 380px;
-    }
-
-    .tarjeta2 {
-        width: 100%;
-        height: 380px;
-    }
-
     .imagen-tarjeta {
         margin-bottom: 20px
     }
@@ -852,18 +798,9 @@
         font-size: 25px;
     }
 
-    .titulo-tarjeta1 p {
-        font-size: 25px;
-    }
-
     .texto-tarjeta p {
         font-size: 15px;
     }
-
-    .texto-tarjeta1 p {
-        font-size: 15px;
-    }
-
 
     .contenedor-planes {
         margin-top: 10px;
