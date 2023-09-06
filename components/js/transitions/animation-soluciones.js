@@ -69,7 +69,7 @@ ScrollReveal().reveal('.contenedor-planes', {
   });
 
 //Texto Ofrecimiento
-ScrollReveal().reveal('.texto-tarjeta', {
+ScrollReveal().reveal('#tarjeta1 .texto-tarjeta p', {
     delay: 500,
     duration: 1200,
   distance:"60px",
@@ -77,7 +77,7 @@ ScrollReveal().reveal('.texto-tarjeta', {
   origin: "bottom"
   });
   
-  ScrollReveal().reveal('.texto-tarjeta2', {
+  ScrollReveal().reveal('#tarjeta2 .texto-tarjeta p', {
     delay: 700,
     duration: 1200,
   distance:"60px",
@@ -85,7 +85,7 @@ ScrollReveal().reveal('.texto-tarjeta', {
   origin: "bottom"
   });
 
-  ScrollReveal().reveal('.texto-tarjeta3', {
+  ScrollReveal().reveal('#tarjeta3 .texto-tarjeta p', {
     delay: 900,
     duration: 1200,
   distance:"60px",

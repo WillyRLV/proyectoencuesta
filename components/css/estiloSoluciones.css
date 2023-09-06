@@ -325,24 +325,13 @@
     color: var(--fifteenthColor);
 }
 
-/* diseño del contenedor del titulo de la tarjeta */
-.titulo-tarjeta1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-
-/* diseño del titulo de la segunda tarjeta del contenedor titulo */
-.titulo-tarjeta1 p {
-    font-size: 30px;
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: bolder;
+/*Color del título de la tarjeta 3*/
+#tarjeta3 .titulo-tarjeta p{
     color: var(--whiteColor);
 }
 
 /* diseño del contenedor del texto de la primera tarjeta */
-.texto-tarjeta {
+.texto-tarjeta{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -351,7 +340,7 @@
 }
 
 /* diseño del texto de la primera tarjeta del contenedor texto-tarjeta */
-.texto-tarjeta p {
+.texto-tarjeta p{
     color: var(--fifteenthColor);
     font-family: 'Lato', sans-serif;
     font-size: 20px;
@@ -359,24 +348,10 @@
     text-align: center;
 }
 
-/* diseño del contenedor del texto de la segunda tarjeta */
-.texto-tarjeta1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
-    width: 50%;
-}
-
-/* diseño del texto de la segunda tarjeta del contenedor texto-tarjeta */
-.texto-tarjeta1 p {
+/*Color del texto de la tarjeta 3*/
+#tarjeta3 .texto-tarjeta p{
     color: var(--whiteColor);
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
 }
-
 /* =================================================================== */
 
 /*Planes*/
