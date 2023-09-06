@@ -6,7 +6,7 @@ ScrollReveal().reveal('.texto-contenedor-s', {
   origin: "top"
   });
 
-ScrollReveal().reveal('.boton-contenedor-s', {
+ScrollReveal().reveal('#btn-consultar', {
     delay: 500,
     duration: 1200,
   distance:"60px",

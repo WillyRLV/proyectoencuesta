@@ -232,18 +232,24 @@
 }
 
 /* diseño del contedor del boton de la segunda seccion */
-.boton-contenedor-s {
+/*.boton-contenedor-s {
     background-color: var(--fifthColor);
     margin-top: 45px;
     padding: 15px 45px;
     border-radius: 42px;
-}
+}*/
 
 /* diseño del enlace que se encuentra dentro del contendor boton */
-.boton-contenedor-s a {
+/*.boton-contenedor-s a {
     text-decoration: none;
     color: var(--whiteColor);
     font-size: 25px;
+}*/
+
+#btn-consultar{
+    background-color: var(--fifthColor);
+    color: var(--whiteColor);
+    margin-top: 35px;
 }
 
 /* tercera parte de soluciones */
