@@ -14,7 +14,7 @@ ScrollReveal().reveal('.boton-contenedor-s', {
   origin: "bottom"
   });
 
-  ScrollReveal().reveal('.tarjeta', {
+  ScrollReveal().reveal('#tarjeta1', {
     delay: 500,
     duration: 1300,
   distance:"0px",
@@ -23,7 +23,7 @@ ScrollReveal().reveal('.boton-contenedor-s', {
 
   });
 
-  ScrollReveal().reveal('.tarjeta1', {
+  ScrollReveal().reveal('#tarjeta2', {
     delay: 700,
     duration: 1600,
   distance:"0px",
@@ -31,7 +31,7 @@ ScrollReveal().reveal('.boton-contenedor-s', {
   origin: "top",
   });
 
-  ScrollReveal().reveal('.tarjeta2', {
+  ScrollReveal().reveal('#tarjeta3', {
     delay: 900,
     duration: 1900,
   distance:"0px",

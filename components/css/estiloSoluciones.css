@@ -260,36 +260,23 @@
 
 /* diseño del contendor de la primera tarjeta */
 .tarjeta {
+    width: 33.3%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;*/
+    align-items: center;
+}
+
+/*Colores Tarjetas*/
+#tarjeta1{
     background-color: var(--eighteenthColor);
-    width: 33.3%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;*/
-    align-items: center;
-
 }
-
-/* diseño del contendor de la segunda tarjeta */
-.tarjeta1 {
+#tarjeta2{
     background-color: var(--whiteColor);
-    width: 33.3%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;*/
-    align-items: center;
 }
-
-/* diseño del contendor de la tercera tarjeta */
-.tarjeta2 {
+#tarjeta3{
     background-color: var(--fifthColor);
-    width: 33.4%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;*/
-    align-items: center;
 }
 
 /* diseño del contenedor de los iconos de cada tarjeta */
@@ -621,7 +608,7 @@
 
 @media screen and (max-height:750px) {
     .texto-slider{
-        top:30%;
+        top:33%;
     }
 }
 
@@ -676,7 +663,7 @@
     /*1280×720*/
 
     .descripcion-texto-slider {
-        width: 35%;
+        width: 37%;
     }
 
     .boton-texto-slider {
@@ -698,11 +685,11 @@
     /*Laptop*/
 
     .texto-slider {
-        top: 38%;
+        top: 30%;
     }
 
     .descripcion-texto-slider {
-        width: 65%;
+        width: 70%;
     }
 
     .boton-texto-slider {
@@ -936,5 +923,18 @@
 
 }
 
+
+@media (max-width: 500px) {
+
+}
+
+/*Tablet*/
+@media (min-width: 501px) and (max-width:1023px) {
+
+}
+/*PC*/
+@media (min-width: 1024px){
+
+}
 
 
