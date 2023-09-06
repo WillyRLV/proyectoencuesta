@@ -60,7 +60,7 @@
 
 /*contenedor que contiene el boton de cada imagen*/
 .boton-texto-slider {
-    margin-top: 20px;
+    margin: 10px;
     width: 15%;
     /*padding: 20px;*/
     background-color: #F7F8FA;
@@ -71,7 +71,7 @@
 
     display: inline-block;
     padding: 10px 20px;
-    font-size: 22px;
+    font-size: 19px;
     color: #545151;
     transition: background-color 0.3s ease; /* Efecto de transición para el color de fondo */
     cursor: pointer;
@@ -87,7 +87,10 @@
     height: 100%;
     z-index: 1; /* Coloca el enlace encima del texto */
     opacity: 0; /* Oculta el enlace, pero sigue siendo clickeable */
-  
+}
+
+.boton-texto-slider:hover {
+    background-color: #f0f0f0; /* Cambia el color de fondo al pasar el ratón sobre el botón */
 }
 
 /* diseño del contenedor general de todas las imagenes del carrousel o slider */
