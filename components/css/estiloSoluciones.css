@@ -62,20 +62,32 @@
 .boton-texto-slider {
     margin-top: 20px;
     width: 15%;
-    padding: 20px;
-    background-color: var(--sixthColor);
+    /*padding: 20px;*/
+    background-color: #F7F8FA;
     text-align: center;
     border-radius: 42px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
+
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 22px;
+    color: #545151;
+    transition: background-color 0.3s ease; /* Efecto de transición para el color de fondo */
+    cursor: pointer;
+    position: relative; /* Necesario para posicionar el enlace correctamente */
 }
 
 /*diesño del enlace que esta dentro del boton de cada imagen */
 .boton-texto-slider a {
-    text-decoration: none;
-    color: var(--subtitleColor);
-    font-size: 22px;
-    font-family: 'Lato' sans-serif;
+    position: absolute; /* Para que el enlace ocupe todo el contenedor */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Coloca el enlace encima del texto */
+    opacity: 0; /* Oculta el enlace, pero sigue siendo clickeable */
+  
 }
 
 /* diseño del contenedor general de todas las imagenes del carrousel o slider */
