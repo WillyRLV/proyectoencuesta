@@ -6,7 +6,7 @@ ScrollReveal().reveal('.texto-contenedor-s', {
   origin: "top"
   });
 
-ScrollReveal().reveal('.boton-contenedor-s', {
+ScrollReveal().reveal('#btn-consultar', {
     delay: 500,
     duration: 1200,
   distance:"60px",
@@ -14,26 +14,26 @@ ScrollReveal().reveal('.boton-contenedor-s', {
   origin: "bottom"
   });
 
-  ScrollReveal().reveal('.tarjeta', {
-    delay: 600,
-    duration: 1400,
+  ScrollReveal().reveal('#tarjeta1', {
+    delay: 500,
+    duration: 1300,
   distance:"0px",
   reset:true,
   origin: "top",
 
   });
 
-  ScrollReveal().reveal('.tarjeta1', {
-    delay: 800,
-    duration: 1700,
+  ScrollReveal().reveal('#tarjeta2', {
+    delay: 700,
+    duration: 1600,
   distance:"0px",
   reset:true,
   origin: "top",
   });
 
-  ScrollReveal().reveal('.tarjeta2', {
-    delay: 1000,
-    duration: 2000,
+  ScrollReveal().reveal('#tarjeta3', {
+    delay: 900,
+    duration: 1900,
   distance:"0px",
   reset:true,
   origin: "top"
@@ -66,4 +66,29 @@ ScrollReveal().reveal('.contenedor-planes', {
   distance:"60px",
   reset:true,
   origin: "top"
+  });
+
+//Texto Ofrecimiento
+ScrollReveal().reveal('#tarjeta1 .texto-tarjeta p', {
+    delay: 500,
+    duration: 1200,
+  distance:"60px",
+  reset:true,
+  origin: "bottom"
+  });
+  
+  ScrollReveal().reveal('#tarjeta2 .texto-tarjeta p', {
+    delay: 700,
+    duration: 1200,
+  distance:"60px",
+  reset:true,
+  origin: "bottom"
+  });
+
+  ScrollReveal().reveal('#tarjeta3 .texto-tarjeta p', {
+    delay: 900,
+    duration: 1200,
+  distance:"60px",
+  reset:true,
+  origin: "bottom"
   });

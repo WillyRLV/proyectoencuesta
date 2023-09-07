@@ -6,6 +6,8 @@
      --fifteenthColor:#707070; /*Letra de las tarjetas*/
      --sixhteenthColor:#3F3D56;/*Color de letra de boton*/
      --whiteColor:#FFFF;
+     --subtitleColor: #666666; /*Color de los Subtitulos, botón principal*/ 
+     --eighteenthColor:#D9D9D9; /*Color de la tercera sección*/
 }
 
 * {
@@ -27,8 +29,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 33%;
-    padding: 75px;
+    padding: 17px;
     width: 100%;
     display: none;
 }
@@ -39,7 +40,7 @@
 
 /*contenedor que contiene el titulo de cada imagen*/
 .titulo-texto-slider {
-    color: rgb(255, 255, 255);
+    color: var(--whiteColor);
     font-size: 4.5em;
     font-weight: 900;
     font-family: 'Rajdhani', sans-serif;
@@ -58,22 +59,37 @@
 
 /*contenedor que contiene el boton de cada imagen*/
 .boton-texto-slider {
-    margin-top: 20px;
+    margin: 10px;
     width: 15%;
-    padding: 20px;
+    /*padding: 20px;*/
     background-color: #F7F8FA;
     text-align: center;
     border-radius: 42px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
+
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 19px;
+    color: #545151;
+    transition: background-color 0.3s ease; /* Efecto de transición para el color de fondo */
+    cursor: pointer;
+    position: relative; /* Necesario para posicionar el enlace correctamente */
 }
 
 /*diesño del enlace que esta dentro del boton de cada imagen */
 .boton-texto-slider a {
-    text-decoration: none;
-    color: #545151;
-    font-size: 22px;
-    font-family: 'Lato' sans-serif;
+    position: absolute; /* Para que el enlace ocupe todo el contenedor */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Coloca el enlace encima del texto */
+    opacity: 0; /* Oculta el enlace, pero sigue siendo clickeable */
+}
+
+.boton-texto-slider:hover {
+    background-color: #f0f0f0; /* Cambia el color de fondo al pasar el ratón sobre el botón */
 }
 
 /* diseño del contenedor general de todas las imagenes del carrousel o slider */
@@ -92,39 +108,6 @@
     left: 0;
     object-fit: cover;
 }
-
-/* .slider-navigation {
-    z-index: 888;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(95vh);
-    margin-bottom: 12px;
-}
-
-.slider-navigation .nav-btn{
-    width: 12px;
-    height: 12px;
-    background: #fff;
-    cursor: pointer;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 0 2px rgba(255,255,255, 0.5);
-    transition: 0.3s ease;
-}
-
-.slider-navigation .nav-btn.active{
-    background: var(--fifthColor);
-}
-
-.slider-navigation .nav-btn:not(:last-child){
-    margin-right: 20px;
-}
-
-.slider-navigation .nav-btn:hover{
-    transform: scale(1.2);
-} */
 
 /* diseño del contenedor general que contiene la imagen y el texto de cada parte del carrousel o slider */
 .imagen-slider {
@@ -212,22 +195,13 @@
     font-size: 50px;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 1000;
-    color: #666666;
+    color: var(--subtitleColor);
 }
 
-/* diseño del contedor del boton de la segunda seccion */
-.boton-contenedor-s {
+#btn-consultar{
     background-color: var(--fifthColor);
-    margin-top: 45px;
-    padding: 15px 45px;
-    border-radius: 42px;
-}
-
-/* diseño del enlace que se encuentra dentro del contendor boton */
-.boton-contenedor-s a {
-    text-decoration: none;
     color: var(--whiteColor);
-    font-size: 25px;
+    margin-top: 35px;
 }
 
 /* tercera parte de soluciones */
@@ -243,19 +217,6 @@
 
 /* diseño del contendor de la primera tarjeta */
 .tarjeta {
-    background-color: #D9D9D9;
-    width: 33.3%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;*/
-    align-items: center;
-
-}
-
-/* diseño del contendor de la segunda tarjeta */
-.tarjeta1 {
-    background-color: white;
     width: 33.3%;
     height: 500px;
     display: flex;
@@ -264,15 +225,15 @@
     align-items: center;
 }
 
-/* diseño del contendor de la tercera tarjeta */
-.tarjeta2 {
+/*Colores Tarjetas*/
+#tarjeta1{
+    background-color: var(--eighteenthColor);
+}
+#tarjeta2{
+    background-color: var(--whiteColor);
+}
+#tarjeta3{
     background-color: var(--fifthColor);
-    width: 33.4%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;*/
-    align-items: center;
 }
 
 /* diseño del contenedor de los iconos de cada tarjeta */
@@ -321,24 +282,13 @@
     color: var(--fifteenthColor);
 }
 
-/* diseño del contenedor del titulo de la tarjeta */
-.titulo-tarjeta1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-
-/* diseño del titulo de la segunda tarjeta del contenedor titulo */
-.titulo-tarjeta1 p {
-    font-size: 30px;
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: bolder;
+/*Color del título de la tarjeta 3*/
+#tarjeta3 .titulo-tarjeta p{
     color: var(--whiteColor);
 }
 
 /* diseño del contenedor del texto de la primera tarjeta */
-.texto-tarjeta {
+.texto-tarjeta{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -347,7 +297,7 @@
 }
 
 /* diseño del texto de la primera tarjeta del contenedor texto-tarjeta */
-.texto-tarjeta p {
+.texto-tarjeta p{
     color: var(--fifteenthColor);
     font-family: 'Lato', sans-serif;
     font-size: 20px;
@@ -355,24 +305,10 @@
     text-align: center;
 }
 
-/* diseño del contenedor del texto de la segunda tarjeta */
-.texto-tarjeta1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 15px;
-    width: 50%;
-}
-
-/* diseño del texto de la segunda tarjeta del contenedor texto-tarjeta */
-.texto-tarjeta1 p {
+/*Color del texto de la tarjeta 3*/
+#tarjeta3 .texto-tarjeta p{
     color: var(--whiteColor);
-    font-family: 'Lato', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    text-align: center;
 }
-
 /* =================================================================== */
 
 /*Planes*/
@@ -392,7 +328,7 @@
 .titulo-planes {
     display: flex;
     margin-top: 50px;
-    margin-bottom: 60px;
+    /*margin-bottom: 60px;*/
 }
 
 /* diseño del texto que se encuentra en el contedor titulo-planes */
@@ -401,7 +337,7 @@
     font-family: 'Duru Sans', sans-serif;
     font-weight: 1000;
     text-align: center;
-    color: #666666;
+    color: var(--subtitleColor);
 }
 
 /* contenedor general de todas las cartas que se encuentren en la sección planes */
@@ -410,7 +346,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 7.5em;
+    margin-top: 4.5em;
     gap: 20px;
     /* background: red;
     height: 90vh; */
@@ -426,7 +362,7 @@
     text-align: center;
     position: relative;
     border-radius: 10px;
-    min-width: 325px;
+    min-width: 240px;
     height: 534px;
     gap: 20px;
     background-color: var(--whiteColor);
@@ -437,8 +373,9 @@
 
 }
 
+/*Escala de las cartas*/
 .contenedor-cartas:hover {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 
@@ -520,6 +457,7 @@
     background-origin: border-box;
     background-clip: content-box, border-box;
 
+    transition: background-image 0.9s ease-in-out; /*Suavizar botón*/
 }
 
 .boton-carta a {
@@ -530,8 +468,6 @@
     font-family: 'Lato', sans-serif;
     font-weight: bold;
 }
-
-
 
 .boton-carta:hover {
     background-image: linear-gradient(90deg, #5F91CC 0%, #8DC4B6 100%),
@@ -548,271 +484,30 @@
 /* =============================================================================================== */
 
 
-/* Responsivo de Soluciones */
-@media screen and (min-height:1081px) {
-
-    /*1920×1080*/
-    .texto-slider {
-        top: 50% !important;
-    }
-
-    .titulo-tarjeta p {
-        font-size: 35px;
-    }
-
-    .texto-tarjeta p {
-        font-size: 23px;
-    }
-
-    .titulo-tarjeta1 p {
-        font-size: 35px;
-    }
-
-    .texto-tarjeta1 p {
-        font-size: 23px;
-    }
-
-}
-
-@media screen and (max-height:1080px) {
-
-    /*1920×1080*/
-    .texto-slider {
-        top: 50%;
-    }
-
-}
-
-@media screen and (max-height:900px) {
-
-    /*1440×900*/
-    .texto-slider {
-        top: 45%;
-    }
-
-}
-
-@media screen and (max-height:864px) {
-
-    /*1536×864*/
-    .texto-slider {
-        top: 42%;
-    }
-
-}
-
-@media screen and (max-height:750px) {
-    .texto-slider{
-        top:30%;
-    }
-}
-
-@media screen and (max-width:1600px) {
-    /*1600×900*/
-
-    .descripcion-texto-slider {
-        width: 28%;
-    }
-
-    .boton-texto-slider {
-        width: 17%;
-    }
-
-}
-
-
-@media screen and (max-width:1440px) {
-    /*1440×900*/
-
-    .descripcion-texto-slider {
-        width: 32%;
-    }
-
-    .boton-texto-slider {
-        width: 18%;
-    }
-
-    .texto-tarjeta {
-        width: 60%;
-    }
-
-    .texto-tarjeta1 {
-        width: 60%;
-    }
-}
-
-@media screen and (max-width:1366px) {
-    /*1366×768*/
-
-    .texto-tarjeta {
-        width: 60%;
-    }
-
-    .texto-tarjeta1 {
-        width: 60%;
-    }
-
-}
-
-@media screen and (max-width:1285px) {
-    /*1280×720*/
-
-    .descripcion-texto-slider {
-        width: 35%;
-    }
-
-    .boton-texto-slider {
-        width: 20%;
-    }
-
-    .texto-tarjeta p {
-        font-size: 18px;
-    }
-
-    .texto-tarjeta1 p {
-        font-size: 18px;
-    }
-
-
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    /*Laptop*/
-
-    .texto-slider {
-        top: 38%;
-    }
-
-    .descripcion-texto-slider {
-        width: 65%;
-    }
-
-    .boton-texto-slider {
-        width: 28%;
-    }
-
-    .texto-tarjeta {
-        width: 75%;
-    }
-
-    .texto-tarjeta1 {
-        width: 75%;
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    /*tablet*/
-
-    .texto-slider {
-        top: 30%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .titulo-texto-slider {
-        font-size: 3.6em;
-    }
-
-    .descripcion-texto-slider {
-        width: 90%;
-        font-size: 1.3em;
-        text-align: center;
-    }
-
-    .boton-texto-slider {
-        width: 50%;
-    }
-
-    .texto-contenedor-s {
-        font-size: 35px;
-    }
-
-    .boton-contenedor-s a {
-        font-size: 18px;
-    }
-
-    .contenedor-tarjetas {
-        flex-direction: column;
-        /* height: auto; */
-    }
-
-    .tarjeta {
-        width: 100%;
-    }
-
-    .tarjeta1 {
-        width: 100%;
-    }
-
-    .tarjeta2 {
-        width: 100%;
-    }
-
-    .imagen-tarjeta {
-        margin-top: 50px;
-    }
-
-    .texto-tarjeta {
-        margin-bottom: 50px;
-    }
-
-    .texto-tarjeta1 {
-        margin-bottom: 50px;
-    }
-
-    .texto-tarjeta p {
-        text-align: center;
-    }
-
-    .texto-tarjeta1 p {
-        text-align: center;
-    }
-
-    .imagen-tarjeta .bi-calendar4-week {
-        font-size: 80px;
-    }
-
-    .imagen-tarjeta .bi-bar-chart-line {
-        font-size: 80px;
-    }
-
-    .imagen-tarjeta .bi-cpu {
-        font-size: 80px;
-    }
-
-    .contenedor-planes {
-        margin-top: 490px;
-    }
-
-    .cartas-planes {
-        margin-top: 2.5em;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-
-    /*celulares*/
+/*Celular*/
+@media (max-width: 500px) {
     .texto-slider {
         display: flex;
         align-items: center;
         justify-content: center;
-        top: 28%;
+        bottom: 20%;
     }
 
     .titulo-texto-slider {
-        font-size: 2.0em;
+        font-size: 1.95em;
+        text-align: center;
     }
 
     .descripcion-texto-slider {
         width: 100%;
         font-size: 1.0em;
         text-align: center;
+        max-width: 378px;
+        min-height: 57px;
     }
 
     .boton-texto-slider {
-        width: 68%;
-        padding: 10px;
+        width: 150px;
     }
 
     .boton-texto-slider a {
@@ -842,16 +537,6 @@
         height: 380px;
     }
 
-    .tarjeta1 {
-        width: 100%;
-        height: 380px;
-    }
-
-    .tarjeta2 {
-        width: 100%;
-        height: 380px;
-    }
-
     .imagen-tarjeta {
         margin-bottom: 20px
     }
@@ -872,18 +557,9 @@
         font-size: 25px;
     }
 
-    .titulo-tarjeta1 p {
-        font-size: 25px;
-    }
-
     .texto-tarjeta p {
         font-size: 15px;
     }
-
-    .texto-tarjeta1 p {
-        font-size: 15px;
-    }
-
 
     .contenedor-planes {
         margin-top: 10px;
@@ -902,8 +578,7 @@
     }
 
     .contenedor-cartas {
-        width: 320px;
-
+        width: 20%;
     }
 
     .contenedor-cartas:hover {
@@ -915,8 +590,102 @@
     .boton-carta {
         background-color: red !important;
     }
-
 }
 
+/*Tablet*/
+@media (min-width: 501px) and (max-width:1023px) {
 
+    .texto-slider {
+        bottom: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .titulo-texto-slider {
+        font-size: 3.6em;
+    }
+
+    .descripcion-texto-slider {
+        width: 90%;
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .boton-texto-slider {
+        width: 207px;
+    }
+
+    .texto-contenedor-s {
+        font-size: 35px;
+    }
+
+    .boton-contenedor-s a {
+        font-size: 18px;
+    }
+
+    .contenedor-tarjetas {
+        flex-direction: column;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+
+    .imagen-tarjeta {
+        margin-top: 50px;
+    }
+
+    .texto-tarjeta {
+        margin-bottom: 50px;
+    }
+
+    .texto-tarjeta p {
+        text-align: center;
+    }
+
+    .imagen-tarjeta .bi-calendar4-week {
+        font-size: 80px;
+    }
+
+    .imagen-tarjeta .bi-bar-chart-line {
+        font-size: 80px;
+    }
+
+    .imagen-tarjeta .bi-cpu {
+        font-size: 80px;
+    }
+
+    .contenedor-planes {
+        margin-top: 590px;
+    }
+
+    .cartas-planes {
+        margin-top: 2.5em;
+    }
+}
+
+/*PC*/
+@media (min-width: 1024px){
+
+    .descripcion-texto-slider {
+        min-width: 400px;
+    }
+
+    .boton-texto-slider {
+        width: 207px;
+        margin-left: 0px;
+    }
+
+    .texto-tarjeta p {
+        font-size: 18px;
+    }
+
+    .texto-tarjeta {
+        width: 60%;
+    }
+
+    .texto-slider{
+        bottom: 7%;
+    }
+}
