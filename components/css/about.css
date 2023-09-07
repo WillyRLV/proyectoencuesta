@@ -89,7 +89,7 @@ position: relative;
 }
 
 .contenedor-datos h1 {
-    color: #000;
+    color: var(--black-color);
     font-size: 2.5em;
     font-weight: bold;
 }
@@ -303,7 +303,7 @@ position: relative;
     position: absolute;
     width: 150px;
     height: 100%;
-    background: linear-gradient(#000,#CD5F5F);
+    background: linear-gradient(var(--black-color),var(--second-color));
     
 }
 
