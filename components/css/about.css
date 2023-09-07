@@ -382,7 +382,7 @@ position: relative;
     grid-area: div8;
 }
 
-
+/*Para sobre nosotros. Hacemos que el texto que este fuera del area no se muestre*/
 .carta-presentacion{
     position: relative;
     overflow: hidden;
@@ -390,6 +390,7 @@ position: relative;
     align-items: center;
 }
 
+/*Los textos que esten dentro de las cartas ocupen el 100% del espacio y centrandolo en el medio*/
 .titulo-carta, .descripcion-carta {
     position: absolute;
     width: 100%;
@@ -403,19 +404,19 @@ position: relative;
     text-align: center;
 }
 
+/*Estilo para el texto de la descripción de la carta y enviandolo fuera para que no sea visible*/
 .descripcion-carta{
-    font-size: 1.3em;
+    font-size: 1.15em;
     font-weight: 600;
+    transform: translateY(150%);
 }
 
-.descripcion-carta{
-    transform: translateY(100%);
-}
-
+/*Cuando se ponga el mouse encima del la carta presentación moveremos el título para afuera del marco*/
 .carta-presentacion:hover .titulo-carta {
-    transform: translateY(-100%);
+    transform: translateY(-125%);
 }
 
+/*Cuando se ponga el mouse encima del la carta presentación moveremos el texto para que este en la posición del título*/
 .carta-presentacion:hover .descripcion-carta {
     transform: translateY(0);
 }
