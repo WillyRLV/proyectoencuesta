@@ -383,6 +383,44 @@ position: relative;
 }
 
 
+.carta-presentacion{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.titulo-carta, .descripcion-carta {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.descripcion-carta{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.descripcion-carta{
+    transform: translateY(100%);
+}
+
+.carta-presentacion:hover .titulo-carta {
+    transform: translateY(-100%);
+}
+
+.carta-presentacion:hover .descripcion-carta {
+    transform: translateY(0);
+}
+
+
 @media screen and (max-width: 768px) {
 
     /* division 1 mobil */
