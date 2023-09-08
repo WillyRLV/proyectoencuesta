@@ -503,11 +503,11 @@
    } 
  
     .edit-two::before {
-        left: 80px;
+        left: 0px;
     }
     
     .edit-two::after {
-        left: 110px;
+        left: 30px;
     }
 
 
