@@ -8,6 +8,7 @@
     --color-white: white;
     --color-two: #292C2E;
     --color-button-373F59: #373F59;
+    --color-hover-button: #585f83;
 
     --transparend: transparent;
     /*tamaños*/
@@ -160,7 +161,7 @@ header.sticky .logo{
 }
 
 .btn-log-in button:hover {
-    background-color: #585f83;
+    background-color: var(--color-hover-button);
 }
 
 /*=============*/
@@ -247,7 +248,7 @@ header.sticky .logo{
         position: absolute;
         background-color: var(--color-white);
         top: 0px;
-        left: -700px;
+        left: -800px;
         width: 100vw;
         height: 100vh;
         justify-content: center;
