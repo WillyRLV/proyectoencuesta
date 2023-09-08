@@ -25,14 +25,12 @@
 }
 
 /*seccion about*/
-.section-about {
- 
-position: relative;
+.section-about { 
+    position: relative;
     padding-top: 85px;
     font-size: 16px;
-        transition: .3s;
-       
-
+    transition: .3s;
+    overflow: hidden;
 }
 
 .section-div {
