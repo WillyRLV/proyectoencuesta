@@ -1,0 +1,70 @@
+body{
+    font-family: "Lato", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor-principal{
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    color: #40B49F;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 31px;
+    font-weight: 700;
+    margin-bottom: 38px;
+    margin-top: 91px;
+}
+
+p {
+    color: #6C6F6E;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 10%;
+}
+
+.img-error {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+.button {
+    display: inline-block;
+    /*Botón*/
+    padding: 7px 30px;
+    background-color: #ffffff;
+    border: 2px solid #536675;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 83px ;
+    /*Texto del botón*/
+    color: #606060;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+}
+
+/*Celular: 500*/
+/*Tablet: 501 - 1023*/
+/*PC: 1024*/
+@media (max-width: 500px) {
+
+}
+
+@media (min-width: 501px) and  (max-width: 1023px){
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
