@@ -50,7 +50,26 @@ p {
     display: none;
 }
 
+/*Div de los iconos de redes sociales*/
+.redes-sociales{
+    max-width:10% ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+}
 
+/*Imagen de las redes sociales*/
+.redes-sociales img{
+    margin: 0 10px;
+    max-width: 25px;
+}
+
+/*Texto para ir a las redes sociales*/
+.enlace p{
+    margin: 50px auto 20px auto;
+    font-weight: 500;
+}
 
 /*Celular: 500*/
 @media (max-width: 500px) {
@@ -72,8 +91,15 @@ p {
         font-size: 1.15em;
     }
 
+    /*Imagen del mantenimiento*/
     .img-mantenimiento{
         max-width: 55%;
+    }
+
+    /*Imagen de las redes sociales*/
+    .redes-sociales img{
+        margin: 0 10px;
+        max-width: 30px;
     }
 }
 
@@ -90,15 +116,16 @@ p {
         margin: 0;
     }
 
-    
+    /*Imagen del mantenimiento*/
     .img-mantenimiento{
-        height: 90vh; /* La imagen ocupa el 90% del alto de la ventana */
+        height: 45vh; /* La imagen ocupa el 90% del alto de la ventana */
         width: auto; /* El ancho se ajusta automáticamente para mantener la proporción */
         display: block; /* Elimina el espacio en blanco debajo de la imagen */
         margin: 0 auto;
     }
 
     #contenedor-principal {
+        margin-top: 20vh;
         display: grid;
         grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
         gap: 20px; /* Espacio entre las columnas */
@@ -128,9 +155,25 @@ p {
     }
 
     /*Aumentando el tamaño del texto y aumentando margen con respecto al botón*/
-    p{
+    #contenedor-principal  p{
         text-align: right;
         margin: 0 0 25px 0;
         font-size: 1.29em;
+    }
+
+    /*Contenedor de enlaces*/
+    .enlace{
+        text-align: center; /* Alinea el contenido al centro horizontalmente */
+    }
+
+    /*tamaño del iconos de redes sociales*/
+    .redes-sociales img{
+        max-width: 35px;
+    }
+
+    /*Descripción para ir a los enlaces*/
+    .enlace p{
+        margin: 70px auto 20px auto;
+        font-weight: 500;
     }
 }
