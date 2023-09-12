@@ -1,0 +1,150 @@
+:root {
+    --color-principal: #40B49F;
+    --color-secundario: #6C6F6E;
+    --color-boton: #536675;
+    --color-text-boton: #606060;
+}
+
+body{
+    font-family: "Lato", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*Contenedor de todo el contenido celular y PC*/
+#contenedor-principal{
+    text-align: center;
+}
+
+/*Título principal del la página*/
+h1{
+    color: var(--color-principal);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 31px;
+    font-weight: 700;
+    margin-bottom: 38px;
+    margin-top: 50px;
+}
+
+/*Parrafo descriptivo*/
+p {
+    color: var(--color-secundario);
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 10%;
+}
+
+/*Imagen principal para celular*/
+.img-error {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/*Ocultando segunda imagen para ser mostrado solamente en PC*/
+.contenedor-imagen > img{
+    display: none;
+}
+
+/*Botón en el cuál se enviará el usuario al Inicio*/
+.button {
+    display: inline-block;
+    /*Botón*/
+    padding: 7px 30px;
+    background-color: #ffffff;
+    border: 2px solid var(--color-boton);
+    border-radius: 5px;
+    margin-bottom: 83px ;
+    /*Texto del botón*/
+    color: var(--color-text-boton);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+}
+
+/*Celular: 500*/
+@media (max-width: 500px) {
+    /*Ocultando el salto de linea*/
+    p br{
+        display: none;
+    }
+}
+
+/*Tablet: 501 - 1023*/
+@media (min-width: 501px) and  (max-width: 1000px){
+    /*Aumentando el tamaño del título*/
+    h1{
+        font-size: 2.4em;
+    }
+
+    /*Aumentando el tamaño del parrafo y quitando margen laterales*/
+    p{
+        font-size: 1.15em;
+        margin: 0;
+    }
+}
+
+/*PC: 1024*/
+@media (min-width: 1001px) {
+    /*Ocultando imagen del modo celular/tablet */
+    .contenedor-celular > img{
+        display: none;
+    }
+
+    /*Mostando imagen para modo PC*/
+    #contenedor-principal > .contenedor-imagen > img{
+        display: block;
+        margin: 0;
+    }
+
+    
+    .img-error{
+        height: 90vh; /* La imagen ocupa el 90% del alto de la ventana */
+        width: auto; /* El ancho se ajusta automáticamente para mantener la proporción */
+        display: block; /* Elimina el espacio en blanco debajo de la imagen */
+        margin: 0 auto;
+    }
+
+    #contenedor-principal {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+        gap: 20px; /* Espacio entre las columnas */
+    }
+   
+    /*Alineando el contenido al lado izquierdo*/
+    .contenedor-celular{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    /*Ajustando la imagen para que este cerca del texto*/
+    .contenedor-imagen{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* alineando la imagen al lado derecho */
+        justify-content: center;
+        margin: 0;
+    }
+
+    /*Aumentando el tamaño del texto y pegandolo al lado izquierdo*/
+    h1{
+        text-align: left;
+        font-size: 3em;
+    }
+
+    /*Aumentando el tamaño del texto y aumentando margen con respecto al botón*/
+    p{
+        text-align: left;
+        margin: 0 0 25px 0;
+        font-size: 1.3em;
+    }
+}
+
