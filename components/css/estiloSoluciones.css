@@ -8,6 +8,7 @@
      --whiteColor:#FFFF;
      --subtitleColor: #666666; /*Color de los Subtitulos, botón principal*/ 
      --eighteenthColor:#D9D9D9; /*Color de la tercera sección*/
+     --botonColor:#8DC4B6; /*8DC4B6*/
 }
 
 * {
@@ -444,43 +445,34 @@
 }
 
 /* estilo del contenedor del boton de la carta */
-.boton-carta {
+/* Estilo base del botón */
+.boton-suscribir{
     display: flex;
     width: 180px;
     height: 35px;
+    /*Texto*/
     justify-content: center;
     align-items: center;
-    border: double 5px transparent;
-    border-radius: 8px;
-    background-image: linear-gradient(white, white),
-        linear-gradient(90deg, #5F91CC 0%, #8DC4B6 100%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-
-    transition: background-image 0.9s ease-in-out; /*Suavizar botón*/
-}
-
-.boton-carta a {
     text-decoration: none;
-    text-align: center;
     color: var(--sixhteenthColor);
     font-size: 15px;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
+    /*Botón*/
+    background: var(--whiteColor);  /* Fondo blanco en estado base */
+    border: 2px solid var(--botonColor); /* Borde transparente en estado base */
+    border-radius: 8px;
+    border-radius: 5px;
+    transition: background 1s ease, border-image 1s ease; /* Agrega la transición al estado base */
 }
 
-.boton-carta:hover {
-    background-image: linear-gradient(90deg, #5F91CC 0%, #8DC4B6 100%),
-        linear-gradient(90deg, #5F91CC 0%, #8DC4B6 100%);
-    color: var(--whiteColor);
-
+/* Estilo al pasar el mouse */
+.boton-suscribir:hover {
+    background: var(--botonColor);
+    color: var(--whiteColor); 
 }
 
-.boton-carta:hover a {
-    color: var(--whiteColor);
-}
 
-/* =============================================================================================== */
 /* =============================================================================================== */
 
 
@@ -585,11 +577,6 @@
         transform: none;
     }
 
-
-
-    .boton-carta {
-        background-color: red !important;
-    }
 }
 
 /*Tablet*/
