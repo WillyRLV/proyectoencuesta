@@ -365,7 +365,7 @@ html {
 
   .contenedor-iconos{
     width: 88%;
-    margin: 0 auto;
+    margin: 0 auto 70px auto;
     gap: 10px;
   }
 
@@ -388,7 +388,7 @@ html {
 
   .contenedor-iconos{
     width: 75%;
-    margin: 0 auto;
+    margin: 0 auto 70px auto;
   }
 }
 
@@ -455,6 +455,7 @@ html {
 
   .contenedor-iconos {
     gap: 30px;
+    margin: 0 auto 70px auto;
   }
 
   .contenedor_cuadros div h1 {
