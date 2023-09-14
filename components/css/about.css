@@ -379,7 +379,7 @@
     /* background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url(/components/img/about/card8.jpg); */
     grid-area: div8;
 }
-
+/**/
 /*Para sobre nosotros. Hacemos que el texto que este fuera del area no se muestre*/
 .carta-presentacion{
     position: relative;
@@ -389,11 +389,11 @@
 }
 
 /*Los textos que esten dentro de las cartas ocupen el 100% del espacio y centrandolo en el medio*/
-.titulo-carta, .descripcion-carta {
+.titulo-carta, .descripcion-carta, h1 {
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 1.2s ease-in-out;
     color: white;
     display: flex;
     justify-content: center;
@@ -409,15 +409,21 @@
     transform: translateY(150%);
 }
 
+.carta-presentacion h1{
+    padding: 10px 20px;
+    display: inline-block;
+}
+
 /*Cuando se ponga el mouse encima del la carta presentación moveremos el título para afuera del marco*/
-.carta-presentacion:hover .titulo-carta {
+/*.carta-presentacion:hover .titulo-carta {
     transform: translateY(-125%);
 }
 
 /*Cuando se ponga el mouse encima del la carta presentación moveremos el texto para que este en la posición del título*/
-.carta-presentacion:hover .descripcion-carta {
+/*.carta-presentacion:hover .descripcion-carta {
     transform: translateY(0);
-}
+}*/
+
 
 .carta-presentacion:hover img{
     filter: brightness(0.5);
@@ -427,6 +433,48 @@
     position: static;
     font-size: 1.8em;
 }
+
+.esquina-superior-izquierda,
+.esquina-inferior-derecha {
+  position: absolute;
+  transition: all 0.5s ease; /* Transición suave para los cambios de forma */
+}
+
+.esquina-superior-izquierda {
+    width: 30px; /* Ancho de las esquinas */
+    height: 30px; /* Altura de las esquinas */
+    top: 0;
+    left: 0;
+    border-top: 5px solid #ffffff; /* Borde superior sólido */
+    border-left: 5px solid #ffffff; /* Borde izquierdo sólido */
+}
+
+.esquina-inferior-derecha {
+    width: 30px; /* Ancho de las esquinas */
+    height: 30px; /* Altura de las esquinas */
+    bottom: 0;
+    right: 0;
+    border-bottom: 5px solid #ffffff; /* Borde inferior sólido */
+    border-right: 5px solid #ffffff; /* Borde derecho sólido */
+}
+
+.conedor-titulo-carta{
+    position: relative;
+}
+
+.carta-presentacion:hover .esquina-superior-izquierda {
+    top: 0;
+    left: 85%;
+  transform: rotate(90deg);
+}
+
+.carta-presentacion:hover .esquina-inferior-derecha {
+    bottom: 0;
+    right: 85%;
+    transform: rotate(90deg);
+}
+
+/**/
 
 @media screen and (max-width: 839px) { /*839*/
 
