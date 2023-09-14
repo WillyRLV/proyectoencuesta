@@ -398,7 +398,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -419,6 +419,14 @@
     transform: translateY(0);
 }
 
+.carta-presentacion:hover img{
+    filter: brightness(0.5);
+}
+
+.carta-presentacion h1{
+    position: static;
+    font-size: 1.8em;
+}
 
 @media screen and (max-width: 839px) { /*839*/
 

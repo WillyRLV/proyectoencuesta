@@ -141,7 +141,7 @@ origin: "bottom"
 });
 
 ScrollReveal().reveal('.div8', {
-  delay:1300,
+  delay:1250,
   duration: 1100,
 distance:'500px',
 origin:'right',
