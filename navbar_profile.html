@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Navbar</title>
+
+    <style>
+
+body{
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1em; /*15px*/
+    font-style: normal;
+    color: #595959;
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    max-width: 80px; 
+}
+
+.yellow-button {
+    background: #F2A530;
+    color: #2D453E;
+    padding: 3px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-size: 0.75em; /*12.5px;*/
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.profile-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    border: #494949 solid 2px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+}
+
+/*==*/
+
+.circulo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 285px; 
+    height: calc(100vh - 66px); /*Ayuda con el tamaño de altura William*/
+    background-color: #fff; 
+    position: fixed;
+    margin-top: 2px;
+    right: -300px;
+    top: 66px;
+    border-left: 1px solid #BCBCBC;
+    box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 60px 0 0 0; 
+    transition: right 0.3s ease-in-out;
+
+}
+
+
+.seccion {
+    border-bottom: 1px solid #BCBCBC;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    height: 33.33%;
+    flex-wrap: nowrap; 
+    align-items: center;
+}
+
+.seccion1{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion3{
+    border-bottom: 0px;
+    padding-left: 37px;
+}
+
+.circulo {
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    border: #494949 solid 2px;
+    border-radius: 50%; 
+    overflow: hidden;
+    position: relative;
+}
+
+.texto {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 35px 0;
+    font-size: .7em; /*12px;*/
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.seccion3 li{
+    margin: 20px 0;
+    color: #625D5D;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.lista img {
+    width: 20px; 
+    height: 20px;
+    vertical-align: middle;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://www.pngall.com/wp-content/uploads/9/Kingdom-Hearts-III-Logo-PNG.png" alt="Logo">
+        </div>
+        <div class="navbar-right">
+            <a href="#" class="yellow-button">Mis encuestas</a>
+            <div class="profile-image" id="profile-image">
+                <img src="https://www.pngitem.com/pimgs/m/497-4970762_sora-kh3-render-hd-png-download.png" alt="Imagen Circular">
+            </div>
+        </div>
+    </nav>
+    <div class="contenedor" id="sidebar">
+        <div class="seccion seccion1">
+            <div class="circulo">
+                <img src="https://www.pngitem.com/pimgs/m/497-4970762_sora-kh3-render-hd-png-download.png" alt="Imagen">
+            </div>
+            <p class="texto">Sora Kingdom</p>
+        </div>
+        <div class="seccion">
+            <ul class="lista">
+                <li class="elemento">
+                    <img style="visibility: visible;" class="imagen-flecha" src="https://th.bing.com/th/id/R.41dc0de29ebeb3768ae142061f8b0b72?rik=OnnKhO9oVzj7lw&pid=ImgRaw&r=0" alt="Flecha">
+                    <span>Perfil</span>
+                </li>
+                <li class="elemento">
+                    <img style="visibility: hidden;" class="imagen-flecha" src="https://th.bing.com/th/id/R.41dc0de29ebeb3768ae142061f8b0b72?rik=OnnKhO9oVzj7lw&pid=ImgRaw&r=0" alt="Flecha">
+                    <span>Mis encuestas</span>
+                </li>
+                <li class="elemento">
+                    <img style="visibility: hidden;" class="imagen-flecha deshabilitado" src="https://th.bing.com/th/id/R.41dc0de29ebeb3768ae142061f8b0b72?rik=OnnKhO9oVzj7lw&pid=ImgRaw&r=0" alt="Flecha" id="imagen3">
+                    <span>Configuración de la cuenta</span>
+                </li>
+            </ul>
+        </div>
+        <div class="seccion seccion3">
+            <ul>
+                <li>Ayuda</li>
+                <li>Cerrar Sesión</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+const profileImage = document.getElementById('profile-image');
+const rightSidebar = document.getElementById('sidebar');
+
+var isSidebar = false;
+
+function hideSidebar() {
+    isSidebar = false;
+    rightSidebar.style.right = '-300px';
+}
+
+function showSidebar() {
+    isSidebar = true;
+    rightSidebar.style.right = '0'
+}
+
+document.addEventListener('click', (event) => {
+    const target = event.target;
+    if (target !== rightSidebar) {
+        hideSidebar();
+    }
+});
+
+/*Ocultar el sidebar al hacerle click en el sidebar?*/
+rightSidebar.addEventListener('click', (event) => {
+    event.stopPropagation();
+});
+
+profileImage.addEventListener('click', (event) => {
+    event.stopPropagation();
+    isSidebar ? hideSidebar() : showSidebar();
+});
+
+
+
+    </script>
+</body>
+</html>
