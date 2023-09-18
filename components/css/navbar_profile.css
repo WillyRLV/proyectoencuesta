@@ -1,3 +1,11 @@
+:root {
+
+    --white-color: #fff;
+    --sidebar-font-color: #595959;
+    --border-sidebar-color: #BCBCBC;
+    --border-profile-circle-color: #494949;
+    --button-encuesta-color: #F2A530;
+}
 
 body{
     margin: 0;
@@ -8,7 +16,7 @@ body{
 }
 
 .navbar {
-    background-color: white;
+    background-color: var(--white-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +29,7 @@ body{
 }
 
 .yellow-button {
-    background: #F2A530;
+    background: var(--button-encuesta-color);
     color: #2D453E;
     padding: 3px 20px;
     text-decoration: none;
@@ -46,11 +54,11 @@ body{
 .profile-image {
     width: 50px;
     height: 50px;
-    background-color: #fff;
+    background-color: var(--white-color);
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    border: #494949 solid 2px;
+    border: var(--border-profile-circle-color) solid 2px;
     margin-left: 10px;
     cursor: pointer;
 }
@@ -75,29 +83,34 @@ body{
 .contenedor {
     display: flex;
     flex-direction: column;
-    width: 285px; 
+    width: 280px; 
     height: calc(100vh - 66px); /*Ayuda con el tamaño de altura William*/
-    background-color: #fff; 
+    background-color: var(--white-color);
     position: fixed;
     margin-top: 2px;
     right: -300px;
     top: 66px;
-    border-left: 1px solid #BCBCBC;
+    border-left: 1px solid var(--border-sidebar-color);
     box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 60px 0 0 0; 
     transition: right 0.3s ease-in-out;
-    color: #595959;
+    color: var(--sidebar-font-color);
 }
 
 
 .seccion {
-    border-bottom: 1px solid #BCBCBC;
+    border-bottom: 1px solid var(--border-sidebar-color);
     padding: 15px;
     text-align: left;
     display: flex;
     height: 33.33%;
     flex-wrap: nowrap; 
     align-items: center;
+}
+
+.seccion a{
+    text-decoration: none;
+    color: var(--sidebar-font-color);
 }
 
 .seccion1{
@@ -114,10 +127,10 @@ body{
 }
 
 .circulo {
-    width: 90px;
-    height: 90px;
-    background-color: #fff;
-    border: #494949 solid 2px;
+    width: 75px;
+    height: 75px;
+    background-color:  var(--white-color);
+    border: var(--border-profile-circle-color) solid 2px;
     border-radius: 50%; 
     overflow: hidden;
     position: relative;
@@ -144,13 +157,15 @@ li {
 
 .seccion3 li{
     margin: 20px 0;
-    color: #625D5D;
     font-weight: 800;
     line-height: normal;
 }
 
 .lista img {
-    width: 20px; 
-    height: 20px;
+    width: 10px; 
+    height: 10px;
     vertical-align: middle;
+    transform: rotate(90deg);
+    flex-shrink: 0;
+    filter: invert(80%) sepia(29%) saturate(3760%) hue-rotate(338deg) brightness(102%) contrast(90%);
 }
