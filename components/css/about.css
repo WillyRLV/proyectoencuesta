@@ -380,6 +380,7 @@
     grid-area: div8;
 }
 
+/*CARTAS PRESENTACIÓN*/
 /*Para sobre nosotros. Hacemos que el texto que este fuera del area no se muestre*/
 .carta-presentacion{
     position: relative;
@@ -393,13 +394,60 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: transform 0.3s ease-in-out;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
+}
+
+/*La transición de la descripción de la carta en aparecer o desaparecer*/
+.descripcion-carta{
+    transition: all 0.8s ease-in-out;
+}
+
+/*La transición del título de la carta(Puntas y títulos) en aparecer o desaparecer*/
+.titulo-carta{
+    transition: all 1s ease-in-out
+}
+
+/*El contenedor es el que va a contener tanto las puntas y títulos*/
+.conedor-titulo-carta{
+    position: relative;
+}
+
+/*Las puntas que aparecen en los títulos*/
+.esquina-superior-izquierda,
+.esquina-inferior-derecha {
+  position: absolute;
+  width: 30px; 
+  height: 30px; 
+  transition: all 1s ease-in-out;
+}
+
+/*La punta de la esquina superior del título*/
+.esquina-superior-izquierda {
+    top: 0;
+    left: 0;
+    border-top: 3px solid #ffffff; 
+    border-left: 3px solid #ffffff;
+}
+
+/*La punta de la esquina inferior del título*/
+.esquina-inferior-derecha {
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+}
+
+/*Modificación del tamaño del título (h1) de la carta*/
+.carta-presentacion h1{
+    padding: 10px 10px;
+    display: inline-block;
+    position: static;
+    font-size: 1.7em;
 }
 
 /*Estilo para el texto de la descripción de la carta y enviandolo fuera para que no sea visible*/
@@ -409,16 +457,38 @@
     transform: translateY(150%);
 }
 
-/*Cuando se ponga el mouse encima del la carta presentación moveremos el título para afuera del marco*/
+/*HOVERS*/
+/*Moveremos el título para afuera del marco*/
 .carta-presentacion:hover .titulo-carta {
-    transform: translateY(-125%);
+    transform: scale(0);
+    opacity: 0;
 }
 
-/*Cuando se ponga el mouse encima del la carta presentación moveremos el texto para que este en la posición del título*/
+/*Moveremos la esquina al lado contrario*/
+.carta-presentacion:hover .esquina-superior-izquierda {
+    top: 0;
+    left: 92%;
+  transform: rotate(90deg);
+}
+
+/*Moveremos la esquina al lado contrario*/
+.carta-presentacion:hover .esquina-inferior-derecha {
+    bottom: 0;
+    right: 92%;
+    transform: rotate(90deg);
+}
+
+/*Moveremos el texto descripción para que este en la posición del título*/
 .carta-presentacion:hover .descripcion-carta {
     transform: translateY(0);
 }
 
+/*Se quitara el brillo de la imagen de fondo*/
+.carta-presentacion:hover img{
+    filter: brightness(0.5);
+}
+
+/* */
 
 @media screen and (max-width: 839px) { /*839*/
 
