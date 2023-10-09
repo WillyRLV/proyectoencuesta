@@ -20,6 +20,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  
 }
 
 /* contenedor principal ======================================= */
@@ -27,6 +28,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
 }
 
@@ -38,6 +40,7 @@ body {
   display: flex;
   justify-content: start;
   align-items: center;
+  min-height: 700px;
 }
 
 .inicio {
@@ -64,6 +67,7 @@ body {
   letter-spacing: .1em;
   text-decoration: none;
   transition: opacity .3s;
+
 }
 .demo a:hover {
   opacity: .5;
